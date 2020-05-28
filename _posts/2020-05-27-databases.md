@@ -3,13 +3,19 @@ layout: post
 title: "Bases de datos en la nube"
 ---
 
-# SQL y NoSQL
+Trabajar con base de datos a sido un tema difícil en cuestión de precios y la nube, nos ofrece muy buenas alternativos, pero al momento de empezar a consultar sus precios es algo confuso.
 
-## Document (NoSQL) Database
+En este articulo llevo una ligera investigación de cuales son los precios que manejan las distintas plataformas de la nube y cual podrá ser la mejor opción.
+
+> Por cuestiones de recursos, la toma de muestra esta basada para aplicaciones pequeñas.
+
+## SQL y NoSQL
+
+### Document (NoSQL) Database
 
 > Pagos mensuales
 
-### Mongo
+#### Mongo
 
 | Plataforma  | Type       | Tamaño | Precio      | Backup | vCPU   | RAM GB | Plan          | Servidor                      |
 |:-----------:|:----------:|:------:|:-----------:|:------:|:------:|:------:|:-------------:|:-----------------------------:|
@@ -25,7 +31,7 @@ title: "Bases de datos en la nube"
 
  > test
 
-### FireStore en GCP
+#### FireStore en GCP
 
 La calculadora de firebase y GPC dicen una cantidad diferente de lecturas y escrituras gratis \
 GPC da 50k gratis de lectura 20k de escritura.
@@ -54,7 +60,7 @@ Para Generar una cantidad de costo en 2 Millones de Lectura/Escritura/Eliminaci�
 > Los precios no incluyen en [Egress](https://cloud.google.com/compute/pricing#network) \
 > \* sin pasar la cuota de transferencia
 
-### Firebase
+#### Firebase
 
 Firebase no se encuentra dentro de GCP, esta en su propia plataforma https://firebase.google.com/
 
@@ -65,7 +71,7 @@ Firebase no se encuentra dentro de GCP, esta en su propia plataforma https://fir
 |  10 GB   | Transferencia  | Gratis    |
 |   1 GB   | Almacenamiento | $  45 USD |
 
-### Otros
+#### Otros
 
 | Plataforma    | Type       | Tamaño | Precio       | Escritura  | Lectura    | Backup | vCPU   | RAM GB | Plan           | Servidor                 |
 |:-------------:|:----------:|:------:|:------------:|:----------:|:----------:|:------:|:------:|:------:|:--------------:|:------------------------:|
@@ -80,13 +86,13 @@ Firebase no se encuentra dentro de GCP, esta en su propia plataforma https://fir
 > \* Documentos alrededor de 5kb con Ond-Demand con 2 millones de lecturas y transacciones al mes. \
 > ** Big Table es recomendada para tamaños de 1TB
 
-## Data SQL
+### Data SQL
 
 > Solo una instancia con recursos compartidos, SSD General Purpose, pagos mensuales.
 >
 > HPC = Enable High Performance Configuration
 
-### SQL Server
+#### SQL Server
 
 > GCP use version 2017
 
@@ -107,7 +113,7 @@ Firebase no se encuentra dentro de GCP, esta en su propia plataforma https://fir
 | Azure      |  20 GB | $  57.71 MXN |  N/A   | 1    | ?         | 3      | General Purpose | East US               |
 | Azure      |  50 GB | $ 144.27 MXN |  N/A   | 1    | ?         | 3      | General Purpose | East US               |
 
-### MySQL
+#### MySQL
 
 | Plataforma     | Tamaño | SSD precio   | Backup | vCPU | CPU/h     | RAM GB | Plan            | Servidor              |
 |:--------------:|:------:|:------------:|:------:|:----:|:---------:|:------:|:--------------- | :-------------------- |
@@ -121,7 +127,7 @@ Firebase no se encuentra dentro de GCP, esta en su propia plataforma https://fir
 | GCP SQL        |  50 GB | $  21.72 USD |  SI    | 1    | HPC       | 3.75   | db-f1-micro     | lowa (us-central1)    |
 | 000webhost.com |  ? GB  |    Gratis    |  SI    | 1    | HPC       | 3.75   | db-f1-micro     | lowa (us-central1)    |
 
-### PostgreSQL
+#### PostgreSQL
 
 Servidor: US East (N. Virginia)
 
@@ -135,10 +141,10 @@ Servidor: US East (N. Virginia)
 | AWS RDS         |  50 GB | $  23.71 USD |  SI    | 1    | 6/3.3 GHz | 1      | db.t2.micro     |
 | elephantsql.com |  20 MB |    Gratis    |  SI    | 1    | ?         | ?      | Gratis          |
 
-### MariaDB y Oracle
+#### MariaDB y Oracle
 
 > AWS Oracle y MariaDB tienen el mismo precio que MySQL
 
-### Otras por ver
+#### Otras por ver
 
 * Spanner
