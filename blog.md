@@ -1,8 +1,8 @@
 ---
 layout: blog
 title: Blog
-tagline: A few more words about this theme
+tagline: Artículos de tecnología
 permalink: /blog.html
 ref: blog
-order: 0
+order: 2
 ---

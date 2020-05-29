@@ -63,6 +63,9 @@
         {% if page.layout == 'post' %}
         {% assign page-tagline = page.tagline | escape  %}
         {% endif %}
+        {% if page.layout == 'blog' %}
+        {% assign page-tagline = page.tagline | escape  %}
+        {% endif %}
         
         <section class="page-header">
             <h1 class="project-name">{{ page-title }}</h1>
@@ -71,8 +74,23 @@
             {% if page.layout == 'post' %}
             <h2 class="project-date">
                 <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                    {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-                    {{ page.date | date: date_format }}
+                    {% assign m = page.date | date: "%-m" %}
+                    {{ page.date | date: "%-d" }} de 
+                    {% case m %}
+                        {% when '1' %}Enero
+                        {% when '2' %}Febrero
+                        {% when '3' %}Marzo
+                        {% when '4' %}Abril
+                        {% when '5' %}Mayo
+                        {% when '6' %}Junio
+                        {% when '7' %}Julio
+                        {% when '8' %}Agosto
+                        {% when '9' %}Septiembre
+                        {% when '10' %}Octubre
+                        {% when '11' %}Noviembre
+                        {% when '12' %}Diciembre
+                    {% endcase %}
+                    {{ page.date | date: "%Y" }}
                 </time>
                 {% assign page_author = page.author | default: site.author | default: nil | escape %}
                 {% if page_author %}
@@ -116,11 +134,11 @@
                 <!-- Contact icon -->
                 {% assign contact_page = site.pages | where: "path", "contact.md" | first %}
                 {% if contact_page.title %}
-                <span class="my-span-icon">
+                <!-- <span class="my-span-icon">
                     <a href="{{ contact_page.url | absolute_url }}" aria-label="Contact" title="Contact {{ site.github.owner_name }}">
                         <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
                     </a>
-                </span>
+                </span> -->
                 {% endif %}
                 
             </footer>

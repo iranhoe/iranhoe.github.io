@@ -1,17 +1,11 @@
 ---
-#
-# Here you can change the text shown in the Home page before the Latest Posts section.
-#
-# Edit cayman-blog's home layout in _layouts instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
+title: Iranhoe
 layout: home
 ---
 
-Cayman Blog Theme is a clean, responsive blogging theme for Jekyll. It is inspired by the Cayman Theme for Github Pages, which can be greatly used for single projects but not as blogging platform.
+Bienvenido a mi página. La cantidad de artículos de artículos de momento es reducida.
+Me encuentro trabajando en ellos para que tengas contenido de tu agrado.
 
-This theme has instead all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
+El propósito de esta sitio es un blog donde podrás encontrar artículos relacionados a Desarrollo de Software.
 
-Have a look at the Github page for more information.
-
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
+Si el tiempo lo permite tendré mas una sección de tutoriales.
