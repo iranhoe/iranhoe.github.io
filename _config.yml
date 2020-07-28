@@ -2,7 +2,7 @@ title: Iranhoe
 description: Página de tecnología y blog
 
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://iranhoe.github.io" # change this to the base hostname & protocol for your site
+url: "//iranhoe.github.io" # change this to the base hostname & protocol for your site
 enforce_ssl: iranhoe.github.io
 
 
@@ -29,7 +29,7 @@ plugins:
 target-blank:
     rel: nofollow
 
-header_page_refs: ['now', 'blog', 'about']
+header_page_refs: ['blog', 'about']
 
 disqus:
   # Leave shortname blank to disable comments site-wide.
