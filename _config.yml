@@ -2,7 +2,7 @@ title: Iranhoe
 description: Página de tecnología y blog
 
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://www.iranhoe.com" # change this to the base hostname & protocol for your site
+url: "https://iranhoe.com" # change this to the base hostname & protocol for your site
 
 google_analytics:
 
