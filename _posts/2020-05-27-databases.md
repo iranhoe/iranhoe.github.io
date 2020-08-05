@@ -1,5 +1,6 @@
 ---
 layout: post
+category: devblog
 title: "Bases de datos en la nube"
 ---
 

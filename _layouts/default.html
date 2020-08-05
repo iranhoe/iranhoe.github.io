@@ -63,7 +63,10 @@
         {% if page.layout == 'post' %}
         {% assign page-tagline = page.tagline | escape  %}
         {% endif %}
-        {% if page.layout == 'blog' %}
+        {% if page.layout == 'devblog' %}
+        {% assign page-tagline = page.tagline | escape  %}
+        {% endif %}
+        {% if page.layout == 'gameblog' %}
         {% assign page-tagline = page.tagline | escape  %}
         {% endif %}
         
