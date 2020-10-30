@@ -30,20 +30,22 @@ Manage and Unmanage Code
 
 #### .Net Core
 
-- .Net Framework/.Net Core
-- kestrel
-- Startup
-- Thread & Task
-- Delegate
-- Action, Func
-- Predicate
-- Extension method
-- Linq
-- Dispose Finalize (IDisposable)
-- GC
-- Generation
-- Generics
-- Tuple
+| LVL | Pregunta                       | Indicio |
+|:---:|--------------------------------|---------|
+| 3/5 | .Net Framework/.Net Core       |         |
+| 4/5 | Kestrel                        |         |
+| 3/5 | Startup                        |         |
+| 3/5 | Thread & Task                  |         |
+| 2/5 | Delegate                       |         |
+| 3/5 | Action, Func                   |         |
+| 4/5 | Predicate                      |         |
+| 3/5 | Extension method               |         |
+| 3/5 | Linq                           |         |
+| 4/5 | Dispose Finalize (IDisposable) |         |
+| 4/5 | GC                             |         |
+| 5/5 | Generations                    |         |
+| 3/5 | Generics                       |         |
+| 4/5 | Tuples                         |         |
 
 #### ASP.NET MVC
 - Workflow
