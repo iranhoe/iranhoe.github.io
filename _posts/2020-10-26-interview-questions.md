@@ -12,21 +12,27 @@ en alguna actualizacion cambiare eso a español e ingles.
 ### Desarrollador C-Sharp con Front-Ednd
 
 #### OOP
-- Pillar
-    - Inheritance
-    - Polymorphism
-    - Encapsulation
-    - abstraction
-- abstract v interface
-- multiinheritance
-- override overloading
-- protect vs internal
-- struct
-- Value Type and Ref
-Manage and Unmanage Code
-- Memory
-    - heap stack
-- Static Class
+
+
+| LVL | Pregunta                       | Indicio                           |
+|:---:|--------------------------------|-----------------------------------|
+| 2/5 | Pillar of OOP                  |                                   |
+| 1/5 | Inheritance / Herencia         |                                   |
+| 3/5 | Polymorphismo                  |                                   |
+| 1/5 | Encapsulation                  |                                   |
+| 2/5 | Abstraction                    |                                   |
+| 2/5 | Abstract vs interface          |                                   |
+| 1/5 | multi inheritance              |                                   |
+| 2/5 | override vs overloading        |                                   |
+| 2/5 | protect vs internal            |                                   |
+| 3/5 | struct                         |                                   |
+| 2/5 | Value Type and Ref             |                                   |
+| 3/5 | Managed and Unmanaged Code     | Managed: compiler - unmanaged: os |
+| 3/5 | Memory                         | Heap & Stack                      |
+| 3/5 | Memory: Heap                   |                                   |
+| 3/5 | Memory: Stack                  |                                   |
+| 3/5 | Statick class                  |                                   |
+
 
 #### .Net Core
 
