@@ -6,6 +6,8 @@ title: "Preguntas que hago para entrevistas"
 
 ## Estos son los temas que pregunto
 
+{% include toc.md %}
+
 Las preguntas estan en ingles porque lo normal es entrevistar en ingles
 en alguna actualizacion cambiare eso a español e ingles.
 
@@ -31,10 +33,10 @@ en alguna actualizacion cambiare eso a español e ingles.
 | 3/5 | Memory                         | Heap & Stack                      |
 | 3/5 | Memory: Heap                   |                                   |
 | 3/5 | Memory: Stack                  |                                   |
-| 3/5 | Statick class                  |                                   |
+| 3/5 | Static class                   |                                   |
 
 
-#### .Net Core
+#### .Net Core (C#)
 
 | LVL | Pregunta                       | Indicio |
 |:---:|--------------------------------|---------|
@@ -54,70 +56,91 @@ en alguna actualizacion cambiare eso a español e ingles.
 | 4/5 | Tuples                         |         |
 
 #### ASP.NET MVC
-- Workflow
-- Security
-- Filters
-    - Order
-    - Types
-- multiple models
-- Route (Core and Framework)
-- HttpVerbs
-- RestAPI
 
-- Assign Model
-- Partial view
-- ViewBag ViewData TempData
-
+| LVL | Pregunta                       | Indicio |
+|:---:|--------------------------------|---------|
+| x/5 | Workflow                       |         |
+| X/5 | Security                       |         |
+| X/5 | Filters                        |         |
+| X/5 | Filters - Order                |         |
+| X/5 | Filters - Types                |         |
+| X/5 | Multiple Models                |         |
+| X/5 | Route (Core and Framework)     |         |
+| X/5 | HttpVerbs                      |         |
+| X/5 | RestAPI                        |         |
+| X/5 | Assign Model                   |         |
+| X/5 | Partial view                   |         |
+| X/5 | ViewBag ViewData TempData      |         |
 
 #### SOLID
-- Single responsibility
-- Open–closed
-- Liskov substitution
-- Interface segregation
-- Dependency inversion
+
+| LVL | Pregunta                       | Indicio |
+|:---:|--------------------------------|---------|
+| X/5 | Single responsibility          |         |
+| X/5 | Open–closed                    |         |
+| X/5 | Liskov substitution            |         |
+| X/5 | Interface segregation          |         |
+| X/5 | Dependency inversion           |         |
 
 #### Design Patterns
-- IoC
-- Singleton
-- Dependency Injection
-- Factory
-- Observable
 
-Creational patterns
-Structural patterns
-Behavioral patterns
-Concurrency patterns
+| LVL | Pregunta             | Indicio |
+|:---:| -------------------- | ------- |
+| X/5 | IoC                  |         |
+| X/5 | Singleton            |         |
+| X/5 | Dependency Injection |         |
+| X/5 | Factory              |         |
+| X/5 | Observable           |         |
+| X/5 | Creational patterns  |         |
+| X/5 | Structural patterns  |         |
+| X/5 | Behavioral patterns  |         |
+| X/5 | Concurrency patterns |         |
 
 #### Javascript
-- JS vs JQ
-- ===
-- Data Types
-- typeof
-- Json Array
-- Let Var Const
-- Prototype
-- Closure
-- Hoisting
-- Scope
-- Promises and callback
-- Multithreading
+
+| LVL | Pregunta                       | Indicio |
+|:---:| ------------------------------ | ------- |
+| X/5 | JS vs JQ                       |         |
+| X/5 | ===                            |         |
+| X/5 | Data Types                     |         |
+| X/5 | typeof                         |         |
+| X/5 | Json Array                     |         |
+| X/5 | Let Var Const                  |         |
+| X/5 | Prototype                      |         |
+| X/5 | Closure                        |         |
+| X/5 | Hoisting                       |         |
+| X/5 | Scope                          |         |
+| X/5 | Promises and callback          |         |
+| X/5 | Promise vs Observable          |         |
+| X/5 | Multithreading                 |         |
+| X/5 | What is the Fetch method?      |         |
+| X/5 | LocalStorage vs SessionStorage |         |
+| X/5 | window vs document             |         |
 
 #### Angular
- - Components
- - directives
- - Services
- - Routing
- - NgModule
+
+| LVL | Pregunta                | Indicio |
+|:---:| ----------------------- | ------- |
+| X/5 | Components              |         |
+| X/5 | Directives              |         |
+| X/5 | Attribute Directives    |         |
+| X/5 | Structural Directives   |         |
+| X/5 | Pipes                   |         |
+| X/5 | Services                |         |
+| X/5 | Routing                 |         |
+| X/5 | NgModule                |         |
+| X/5 | Angular Template        |         |
 
 #### TypeScript
- - Decorators
- - Strongly-Type
 
-UNIT TEST
-AGILE Methodology
+| LVL | Pregunta      | Indicio |
+|:---:| ------------- | ------- |
+| X/5 | Decorators    |         |
+| X/5 | Strongly-Type |         |
 
+#### UNIT TEST
+#### AGILE Methodology
 #### Html
 #### Boostrap
 #### Unit Testing
 #### Cloud
-
