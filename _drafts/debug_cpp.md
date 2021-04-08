@@ -94,3 +94,4 @@ int main()
 - https://en.wikipedia.org/wiki/MinGW
 - https://dev.to/gamegods3/how-to-install-gcc-in-windows-10-the-easier-way-422j
 - https://www.40tude.fr/compile-cpp-code-with-vscode-clang/
+- https://medium.com/@martin.kunc/c-compilation-and-debugging-in-visual-studio-code-1ca912e59ec7
