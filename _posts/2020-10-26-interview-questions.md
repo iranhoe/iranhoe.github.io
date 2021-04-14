@@ -18,28 +18,30 @@ en alguna actualizacion cambiare eso a español e ingles.
 
 | LVL | Pregunta                       | Indicio                           |
 |:---:|--------------------------------|-----------------------------------|
-| 2/5 | Pillar of OOP                  |                                   |
-| 1/5 | Inheritance / Herencia         |                                   |
-| 3/5 | Polymorphismo                  |                                   |
-| 1/5 | Encapsulation                  |                                   |
-| 2/5 | Abstraction                    |                                   |
-| 2/5 | Abstract vs interface          |                                   |
-| 1/5 | multi inheritance              |                                   |
-| 2/5 | override vs overloading        |                                   |
-| 2/5 | protect vs internal            |                                   |
-| 3/5 | struct                         |                                   |
-| 2/5 | Value Type and Ref             |                                   |
-| 3/5 | Managed and Unmanaged Code     | Managed: compiler - unmanaged: os |
-| 3/5 | Memory                         | Heap & Stack                      |
-| 3/5 | Memory: Heap                   |                                   |
-| 3/5 | Memory: Stack                  |                                   |
-| 3/5 | Static class                   |                                   |
-
+|  2  | Pillar of OOP                  | Inheritance, Polymorphism Encapsulation, Abstraction |
+|  1  | Inheritance / Herencia         |                                   |
+|  3  | Polymorphism                   | Is the property in a programming language that allows objects of different types to be substituted for one another in program flow without needing to know ahead of time what the object's type. |
+|  1  | Encapsulation                  | Protective encasement that permits access to an object's data only via specifically assigned operations. |
+|  2  | Abstraction                    | Showing only the essential attributes of something and hiding any implementation finromation that is unncessary to the user |
+|  2  | Abstract vs interface          |                                   |
+|  1  | multi inheritance              |                                   |
+|  2  | override vs overloading        |                                   |
+|  2  | protect vs internal            |                                   |
+|  3  | struct                         |                                   |
+|  2  | Value Type and Ref             |                                   |
+|  3  | Managed and Unmanaged Code     | Managed: compiler - unmanaged: os |
+|  3  | Memory                         | Heap & Stack                      |
+|  3  | Memory: Heap                   | It is the memory in which objects reside. Reference Types |
+|  3  | Memory: Stack                  | Stack is a block of memory for storing local variables and parameters. Computer's Memory, Temprary Storage Memory |
+|  3  | Static class                   |                                   |
 
 #### .Net Core (C#)
 
 | LVL | Pregunta                       | Indicio |
 |:---:|--------------------------------|---------|
+|  5  | CLR                            | Common Language Runtime: Improves runtime interactivity between programs, portability, security, cross-language integration |
+|  5  | MSIL/CIL                       | Microsoft Intermediate Language / Common Intermediate Language |
+|  5  | CLI                            | Common Language Infrastructure |
 | 3/5 | .Net Framework/.Net Core       |         |
 | 4/5 | Kestrel                        |         |
 | 3/5 | Startup                        |         |
@@ -53,7 +55,8 @@ en alguna actualizacion cambiare eso a español e ingles.
 | 4/5 | GC                             |         |
 | 5/5 | Generations                    |         |
 | 3/5 | Generics                       |         |
-| 4/5 | Tuples                         |         |
+| 4/5 | Tuples                         | Provide a simple way to store a set of values. The main purpose of tuples is to safely return multiple values from a method without resorting to **out** parameters (something you cannot do with anonymous types) |
+| 4   | Unsafe code                    | Permitted to use pointer types and perform C++ style pointer operations on memory within that scope |
 
 #### ASP.NET MVC
 
