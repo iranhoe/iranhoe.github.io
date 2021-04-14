@@ -76,11 +76,11 @@ en alguna actualizacion cambiare eso a español e ingles.
 
 | LVL | Pregunta                       | Indicio |
 |:---:|--------------------------------|---------|
-| X/5 | Single responsibility          |         |
-| X/5 | Open–closed                    |         |
-| X/5 | Liskov substitution            |         |
-| X/5 | Interface segregation          |         |
-| X/5 | Dependency inversion           |         |
+| X/5 | Single responsibility          | Gather toghter the things that change for the same reasons, Separete things that Change for different reason <br /> Tambien se puede decir que un object tiene una sola razon para cambiar |
+| X/5 | Open–closed                    | A Module should be open for extension but closed for modification |
+| 5/5 | Liskov substitution            | A program that uses an interface must no be confused by an implmentation of that interface <br /> Objectos de un programa deberian ser reemplazabes por instances de sus subtipos sin alterar el correcto funcionamiento del programa   |
+| 5/5 | Interface segregation          | Keep interfaces small so that users don't end up depending on things they don't need <br /> Muchas interfaces cliente espeficicas son mejores que una interfaz de propósito general |
+| X/5 | Dependency inversion           |  Depend in the direction of abstraction. High level modules should not depend upon low level details <br /> La noción de que se debe "depender de abstracciones, no depender de implementaciones".       |
 
 #### Design Patterns
 
@@ -91,10 +91,58 @@ en alguna actualizacion cambiare eso a español e ingles.
 | X/5 | Dependency Injection |         |
 | X/5 | Factory              |         |
 | X/5 | Observable           |         |
-| X/5 | Creational patterns  |         |
-| X/5 | Structural patterns  |         |
-| X/5 | Behavioral patterns  |         |
-| X/5 | Concurrency patterns |         |
+| X/5 | Creational patterns  | These patterns are designed for class instantiation. They can be either class-creation patterns or object-creational patterns |
+| X/5 | Structural patterns  | These patterns are designed with regard to a class' structure and composition. The main goal of most of these patterns is to increase the functionality of the class(es) involved, without changin much of its composition |
+| X/5 | Behavioral patterns  | These patterns are designed depending on how one class communicates with others |
+
+##### Creational
+
+- Abstract Factory
+- Builder
+- Factory Method
+- Prototype
+- Singleton
+- 
+- Lazy initialization
+- Dependency Injection
+- Multiton
+- Object pool
+- Resource acquisition is initialization
+
+##### Structural
+
+- Adapter (Wrapper or Translator)
+- Bridge
+- Composite
+- Decorator
+- Facade
+- Flyweight
+- Proxy
+- .
+- Extension Object
+- Front controller
+- Marker
+- Module
+- Twin
+
+##### Behavioural
+
+- Chain of reponsability
+- Command
+- Interpreter
+- Iterator
+- Mediator
+- Memento
+- Observer (Publish/subscribe)
+- State
+- Strategy
+- Template method
+- Visitor
+- .
+- Blackboard
+- Null object
+- Servant
+- Specification
 
 #### Javascript
 
