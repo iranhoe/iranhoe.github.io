@@ -43,7 +43,10 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  3  | E     | Static class                   |                                   |
 |  2  | E     | Donde se guarda el tipo Valor  | Se guardan en el stack            |
 |  2  | E     | Donde se guarda el tipo de Ref | SE guardan en el Heap             |
-|  2  | E     | Boxing y Unboxing              |                                   |
+|  5  | E     | Boxing                         | Boxing es el acto de hacer cas a un **value type** aun **reference type**, puede *reference type* puede ser un objecto clase o una interfaz. <br /> Ejemplo C#: <br /> ``` int = 123; ``` <br /> ``` object 0 = i; ``` |
+|  5  | E     | Unboxing                       | 
+|  ?  | E     | Clase abstracta                             | Son placeholder para la implementación de clases reales <br /> no pueden ser instanciadas.
+|  ?  | E     | Diferencia clase abstracta y una clase      | Las clases regulares todos los métodos están completamente implementados, una clase abstracta sus funciones no estan definidas (son abstractas).
 
 #### .Net Core (C#)
 
@@ -61,11 +64,12 @@ en alguna actualizacion cambiare eso a español e ingles.
 |     | E     | Tipo de Delegados                           | Tipo (Type) e Instancia (instance) |
 |  4  | E     | Delegado de tipo (delegate Type)            | Un *delegate type* define un *protocolo* el cual el que lo llama y el objetivo van a confirmar, comprometiendo una lista de tipo de parámetros y un tipo de retorno |
 |  4  | E     | Delegado de instancia (delegate instance)   | Un *delegate instance* es un tipo de objeto que se referencia a uno o mas métodos objetivos conformando un protocolo.
-| 3/5 |       | Action (delegate)                           | functions that do not return a value |
-|  2  |       | Func (delegate)                             |         |
+| 3/5 | E     | Action (delegate)                           | functions that do not return a value |
+|  2  | E     | Func (delegate)                             |         |
 | 4/5 |       | Predicate                                   |         |
-| 3/5 |       | Extension method                            |         |
-| 3/5 |       | Linq                                        |         |
+| 3/5 | E     | Extension method                            |         |
+| 3/5 | E     | Linq                                        |         |
+|  3  | E     | Lamba Expression
 | 4/5 |       | Dispose Finalize (IDisposable)              |         |
 | 4/5 |       | GC                                          |         |
 | 5/5 |       | Generations                                 |         |
@@ -74,7 +78,10 @@ en alguna actualizacion cambiare eso a español e ingles.
 | 4   |       | Unsafe code                                 | Permitted to use pointer types and perform C++ style pointer operations on memory within that scope |
 |  ?  |       | GC memory work                              |
 |  ?  | E     | Caules IoC utilizas                         |
-|  ?  | E     | Tipos de Scope en .Net Core IoC             | Singleton, Transaction
+|  ?  | E     | Tipos de LifeTime en .Net Core IoC          | AddSingleton, Transaction
+|  ?  | E     | Generic con contrains                       |
+|  ?  | E     | Reflection                                  |
+| ?   | E     | Modificador de acceso por default           | 
 
 #### ASP.NET MVC
 
@@ -121,89 +128,47 @@ en alguna actualizacion cambiare eso a español e ingles.
 | X/5 | HL    | Structural patterns  | These patterns are designed with regard to a class' structure and composition. The main goal of most of these patterns is to increase the functionality of the class(es) involved, without changin much of its composition |
 | X/5 | HL    | Behavioral patterns  | These patterns are designed depending on how one class communicates with others |
 
-##### Creational
+-----
 
-- Abstract Factory
-- Builder
-- Factory Method
-- Prototype
-- Singleton
-- 
-- Lazy initialization
-- Dependency Injection
-- Multiton
-- Object pool
-- Resource acquisition is initialization
-
-##### Structural
-
-- Adapter (Wrapper or Translator)
-- Bridge
-- Composite
-- Decorator
-- Facade
-- Flyweight
-- Proxy
-- .
-- Extension Object
-- Front controller
-- Marker
-- Module
-- Twin
-
-##### Behavioural
-
-- Chain of reponsability
-- Command
-- Interpreter
-- Iterator
-- Mediator
-- Memento
-- Observer (Publish/subscribe)
-- State
-- Strategy
-- Template method
-- Visitor
-- .
-- Blackboard
-- Null object
-- Servant
-- Specification
+|               | Creational | Structural | Behavioural |
+| ------------- | ---------- | ---------- | ----------- |
+| Comunes       | - Abstract Factory<br />- Builder<br />- Factory Method<br />- Prototype<br />- Singleton<br /> | - Adapter (Wrapper or Translator)<br />- Bridge<br />- Composite<br />- Decorator<br />- Facade<br />- Flyweight<br />- Proxy<br /> | - Chain of reponsability<br />- Command<br />- Interpreter<br />- Iterator<br />- Mediator<br />- Memento<br />- Observer (Publish/subscribe)<br />- State<br />- Strategy<br />- Template method<br />- Visitor<br /> |
+| Menos comunes | - Lazy initialization<br />- Dependency Injection<br />- Multiton<br />- Object pool<br />- Resource acquisition is initialization<br /> | - Extension Object<br />- Front controller<br />- Marker<br />- Module<br />- Twin<br /> | - Blackboard<br />- Null object<br />- Servant<br />- Specification<br /> |
 
 #### Javascript
 
-| LVL | Pregunta                       | Indicio |
-|:---:| ------------------------------ | ------- |
-| X/5 | JS vs JQ                       |         |
-| X/5 | ===                            |         |
-| X/5 | Data Types                     |         |
-| X/5 | typeof                         |         |
-| X/5 | Json Array                     |         |
-| X/5 | Let Var Const                  |         |
-| X/5 | Prototype                      |         |
-| X/5 | Closure                        |         |
-| X/5 | Hoisting                       |         |
-| X/5 | Scope                          |         |
-| X/5 | Promises and callback          |         |
-| X/5 | Promise vs Observable          |         |
-| X/5 | Multithreading                 |         |
-| X/5 | What is the Fetch method?      |         |
-| X/5 | LocalStorage vs SessionStorage |         |
-| X/5 | window vs document             |         |
+| LVL | Lugar | Pregunta                       | Indicio |
+|:---:| ----- | ------------------------------ | ------- |
+| X/5 | H     | JS vs JQ                       |         |
+| X/5 | H     | ===                            |         |
+| X/5 | H     | Data Types                     |         |
+| X/5 | H     | typeof                         |         |
+| X/5 | H     | Json Array                     |         |
+| X/5 | H     | Let Var Const                  |         |
+| X/5 | H     | Prototype                      |         |
+| X/5 | H     | Closure                        |         |
+| X/5 | H     | Hoisting                       |         |
+| X/5 | HU    | Scope                          |         |
+| X/5 | H     | Promises and callback          |         |
+| X/5 | H     | Promise vs Observable          |         |
+| X/5 | H     | Multithreading                 |         |
+| X/5 |       | What is the Fetch method?      |         |
+| X/5 | U     | LocalStorage vs SessionStorage |         |
+| X/5 | H     | window vs document             |         |
 
 #### Angular
 
-| LVL | Pregunta                | Indicio |
-|:---:| ----------------------- | ------- |
-| X/5 | Components              |         |
-| X/5 | Directives              |         |
-| X/5 | Attribute Directives    |         |
-| X/5 | Structural Directives   |         |
-| X/5 | Pipes                   |         |
-| X/5 | Services                |         |
-| X/5 | Routing                 |         |
-| X/5 | NgModule                |         |
-| X/5 | Angular Template        |         |
+| LVL | Lugar | Pregunta                | Indicio |
+|:---:| ----- | ----------------------- | ------- |
+| X/5 |       | Components              |         |
+| X/5 | U     | Directives              |         |
+| X/5 | U     | Attribute Directives    |         |
+| X/5 |       | Structural Directives   |         |
+| X/5 | U     | Pipes                   |         |
+| X/5 |       | Services                |         |
+| X/5 |       | Routing                 |         |
+| X/5 |       | NgModule                |         |
+| X/5 | U     | Angular Template        |         |
 
 #### TypeScript
 
