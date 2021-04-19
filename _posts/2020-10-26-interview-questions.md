@@ -47,6 +47,7 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  5  | E     | Unboxing                       | 
 |  ?  | E     | Clase abstracta                             | Son placeholder para la implementación de clases reales <br /> no pueden ser instanciadas.
 |  ?  | E     | Diferencia clase abstracta y una clase      | Las clases regulares todos los métodos están completamente implementados, una clase abstracta sus funciones no estan definidas (son abstractas).
+|  2  | L     | Constructor Clases abstractas | |
 
 #### .Net Core (C#)
 
