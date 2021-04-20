@@ -6,6 +6,9 @@ title: "Preguntas que hago para entrevistas"
 
 ## Estos son los temas que pregunto
 
+> NOTA: No saber algo LVL 1 es mas malo que no saber algo de LVL 5, esto es muy a criterio.  
+> Ejemplo fallar 1/10 preguntas de LVL 1 de OOP no es malo, Fallar 9/10  ya responder solo de LVL 5 puede interpretarse como que solo se busco términos rapidos sin fundamentos.  
+
 {% include toc.md %}
 
 Las preguntas estan en ingles porque lo normal es entrevistar en ingles
@@ -43,8 +46,8 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  3  | E     | Static class                   |                                   |
 |  2  | E     | Donde se guarda el tipo Valor  | Se guardan en el stack            |
 |  2  | E     | Donde se guarda el tipo de Ref | SE guardan en el Heap             |
-|  5  | E     | Boxing                         | Boxing es el acto de hacer cas a un **value type** aun **reference type**, puede *reference type* puede ser un objecto clase o una interfaz. <br /> Ejemplo C#: <br /> ``` int = 123; ``` <br /> ``` object 0 = i; ``` |
-|  5  | E     | Unboxing                       | 
+|  5  | E     | Boxing                         | Boxing es el acto de hacer cas a un **value type** aun **reference type**, puede *reference type* puede ser un objecto clase o una interfaz. <br /> Ejemplo C#: <br /> ``` int = 123; ``` <br /> ``` object o = i; \\ boxing ``` |
+|  5  | E     | Unboxing                       | ``` 0 = 123; ``` <br /> ``` i = (int)o;  \\ unboxing```
 |  ?  | E     | Clase abstracta                             | Son placeholder para la implementación de clases reales <br /> no pueden ser instanciadas.
 |  ?  | E     | Diferencia clase abstracta y una clase      | Las clases regulares todos los métodos están completamente implementados, una clase abstracta sus funciones no estan definidas (son abstractas).
 |  2  | L     | Constructor Clases abstractas | |
@@ -82,7 +85,28 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  ?  | E     | Tipos de LifeTime en .Net Core IoC          | AddSingleton, Transaction
 |  ?  | E     | Generic con contrains                       |
 |  ?  | E     | Reflection                                  |
-| ?   | E     | Modificador de acceso por default           | 
+|  ?  | E     | Modificador de acceso por default           | |
+|  ?  | LE    | Librerias de IoC                            | |
+|  2  | S     | Data Types                                  | int, long, double, decimal, float, char, string, bool, byte, object, sbyte, short, uint, ulong, ushort |
+|  2  | S     | Data Structure                              | Collecciones son el estandar que complementan los arrays, fuera de las arreglos, no cuenta con estructura de datos como otros lenguages que tienen tipo de estructuras de key-value. C# include un tipo comun de estructura que ayude a crear colecciones (System.Collection) |
+|  1  | S     | Flow Control                                | if-else-, while, do-while, switch, for, foreach
+
+**Es demasiado**
+| +5  |       | Integer literals                            | decimal, hexadecimal, binary |
+
+
+**Data Types**
+
+| Tipos   | Tamaño           |  Descripción                                       |
+| ------- | ---------------- | -------------------------------------------------- |
+| int     | 4 bytes          | almacena numeros de -2,147,483,648 a 2,147,483,647 |
+| long    | 8 bytes          | |
+| float   | 4 bytes          | internal representation base 2  |
+| double  | 8 bytes          | internal representation base 2  |
+| decimal |                  | internal representation base 10 lo que lo hace muy preciso |
+| bool    | 1 bit            |
+| char    | 2 bytes          |
+| string  | 2 bytes por char | |
 
 #### ASP.NET MVC
 
@@ -110,11 +134,12 @@ en alguna actualizacion cambiare eso a español e ingles.
 | 5/5 | HL    | Liskov substitution            | A program that uses an interface must no be confused by an implmentation of that interface <br /> Objectos de un programa deberian ser reemplazabes por instances de sus subtipos sin alterar el correcto funcionamiento del programa   |
 | 5/5 | HL    | Interface segregation          | Keep interfaces small so that users don't end up depending on things they don't need <br /> Muchas interfaces cliente espeficicas son mejores que una interfaz de propósito general |
 | X/5 | HL    | Dependency inversion           | Depend in the direction of abstraction. High level modules should not depend upon low level details <br /> La noción de que se debe "depender de abstracciones, no depender de implementaciones".       |
-|  ?  | E     | Caules OOP aplican a S         | 
-|  ?  | E     | Caules OOP aplican a O         | Creo que con el Polimorfismo |
-|  ?  | E     | Caules OOP aplican a L         |
-|  ?  | E     | Caules OOP aplican a I         |
-|  ?  | E     | Caules OOP aplican a D         |
+|  3  | E     | Caules OOP aplican a S         | No decir que solo tiene una responsabilidad <br /> se puede explicar mejor diciendo que solo tiene una razon para cambiar |
+|  4  | E     | Caules OOP aplican a O         | Creo que con el Polimorfismo |
+|  4  | E     | Caules OOP aplican a L         |        |
+|  4  | E     | Caules OOP aplican a I         |        |
+|  4  | E     | Caules OOP aplican a D         |        |
+|  4  | L     | Explica para que es el SOLID - no las nombres |
 
 #### Design Patterns
 
@@ -138,38 +163,54 @@ en alguna actualizacion cambiare eso a español e ingles.
 
 #### Javascript
 
-| LVL | Lugar | Pregunta                       | Indicio |
-|:---:| ----- | ------------------------------ | ------- |
-| X/5 | H     | JS vs JQ                       |         |
-| X/5 | H     | ===                            |         |
-| X/5 | H     | Data Types                     |         |
-| X/5 | H     | typeof                         |         |
-| X/5 | H     | Json Array                     |         |
-| X/5 | H     | Let Var Const                  |         |
-| X/5 | H     | Prototype                      |         |
-| X/5 | H     | Closure                        |         |
-| X/5 | H     | Hoisting                       |         |
-| X/5 | HU    | Scope                          |         |
-| X/5 | H     | Promises and callback          |         |
-| X/5 | H     | Promise vs Observable          |         |
-| X/5 | H     | Multithreading                 |         |
-| X/5 |       | What is the Fetch method?      |         |
-| X/5 | U     | LocalStorage vs SessionStorage |         |
-| X/5 | H     | window vs document             |         |
+> Las ligas llevan a paginas externas, en un futuro planea que llevan a secciones del blog.
+
+| LVL | Lugar | Pregunta                        | Indicio |
+|:---:| ----- | ------------------------------- | ------- |
+|  ?  | H     | JS vs JQ                        |         |
+|  ?  | H     | ===                             |         |
+|  2  | HS    | [Data Types](https://javascript.info/data-types) | Number, String, Boolean, undefined, *bigInit*, *Symbol*, **null**, **object** |
+|  2  | HS    | Strcuture Types                 | object, Function |
+|  ?  |       | Strcutural Root (Pagina de [MDZ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)) | null - La agregue porque esta en la pagina de moz como tipo objeto
+|  3  |       | Ejemplo de Objects              | Object, [Array](https://javascript.info/array-methods), [Map, Set](https://javascript.info/map-set), WeakMap, WeaSet, Date. Todo lo que va despues de **new** |
+|  3  | S     | Flow Control                    | While, Do-While, For, If-else, Switch |
+|  3  |       | hasOwnProperty                  |         |
+|  ?  | H     | typeof                          |         |
+|  ?  | H     | Json Array                      |         |
+|  ?  | HL    | Let Var Const                   |         |
+|  ?  | HL    | Prototype                       |         |
+|  ?  | HL    | Closure                         |         |
+|  ?  | H     | Hoisting                        |         |
+|  ?  | HU    | Scope                           |         |
+|  5  | S     | Programacion Asíncrona          | Promises, async/await |
+|  5  | 
+|  ?  | H     | Promises and callback           |         |
+|  ?  | H     | Promise vs Observable           |         |
+|  ?  | H     | Multithreading                  |         |
+|  ?  |       | What is the Fetch method?       |         |
+|  ?  | U     | LocalStorage vs SessionStorage  |         |
+|  ?  | H     | window vs document              |         |
 
 #### Angular
 
 | LVL | Lugar | Pregunta                | Indicio |
 |:---:| ----- | ----------------------- | ------- |
-| X/5 |       | Components              |         |
-| X/5 | U     | Directives              |         |
-| X/5 | U     | Attribute Directives    |         |
-| X/5 |       | Structural Directives   |         |
-| X/5 | U     | Pipes                   |         |
-| X/5 |       | Services                |         |
-| X/5 |       | Routing                 |         |
-| X/5 |       | NgModule                |         |
-| X/5 | U     | Angular Template        |         |
+|  5  |       | Components              |         |
+|  5  | U     | Directives              |         |
+|  5  | U     | Attribute Directives    |         |
+|  5  |       | Structural Directives   |         |
+|  5  | U     | Pipes                   |         |
+|  5  |       | Services                |         |
+|  5  |       | Routing                 |         |
+|  5  |       | NgModule                |         |
+|  5  | U     | Angular Template        |         |
+
+#### ReactJS
+
+| LVL | Lugar | Pregunta                  | Indicio |
+|:---:| ----- | ------------------------- | ------- |
+|  ?  | S     | Ciclo de vida (lifecycle) |         |
+|  ?  | S     | hooks                     |         |
 
 #### TypeScript
 
@@ -193,6 +234,9 @@ en alguna actualizacion cambiare eso a español e ingles.
 |:---:| ----- | -------------------- | ------- |
 |  3  | L     | PaaS                 | Una plataforma compartida para los desarrolladores donde puede espedar su software. Es una capa abstracta de la infrastructura, asi los desarrolladores no necesitan preocuparse por la configuracion del servidor |
 |  3  | L     | IaaS                 | Una infrastructura de hardware compartida donde el administador puede contruir infrastructuras de servicios, es decir, tiene mas control del sistema que el PaaS  |
+|  1  |       | Ejemplos de SaaS     | Wordpress |
+|  1  |       | Ejemplo de PaaS      | Azure Web Apps |
+|  2  |       | Ejemplo de IaaS      | Azure VMs      |
 
 #### UNIT TEST
 #### AGILE Methodology
