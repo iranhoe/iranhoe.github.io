@@ -57,7 +57,7 @@ en alguna actualizacion cambiare eso a español e ingles.
 
 <a href="#markdown-toc">regresar</a>
 
-### .Net Core (C#)
+### .Net (C#)
 
 | LVL | Lugar | Pregunta                                    | Indicio |
 |:---:| ----- | ------------------------------------------- |---------|
@@ -65,8 +65,6 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  5  | L     | MSIL/CIL                                    | Microsoft Intermediate Language / Common Intermediate Language |
 |  5  | L     | CLI                                         | Common Language Infrastructure |
 |  3  | HLU   | .Net Framework/.Net Core                    |         |
-|  4  | L     | Kestrel                                     |         |
-|  3  | HLE   | Startup                                     |         |
 |  3  | HLE   | Thread & Task                               |         |
 |  5  | E     | Programación Asíncrona                      | async, await, task |
 |  2  | HLE   | Delegate                                    | action & func |
@@ -95,6 +93,20 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  2  | S     | Data Types                                  | int, long, double, decimal, float, char, string, bool, byte, object, sbyte, short, uint, ulong, ushort |
 |  2  | S     | Data Structure                              | Collecciones son el estandar que complementan los arrays, fuera de las arreglos, no cuenta con estructura de datos como otros lenguages que tienen tipo de estructuras de key-value. C# include un tipo comun de estructura que ayude a crear colecciones (System.Collection) |
 |  1  | S     | Flow Control                                | if-else-, while, do-while, switch, for, foreach
+
+#### .NET Core
+
+| LVL | Lugar | Pregunta                                          | Indicio                    |
+|:---:| ----- | ------------------------------------------------- | -------------------------- |
+|  4  | L     | Kestrel                                           |                            |
+|  3  | ULE   | Startup                                           |                            |
+|  1  | L     | Como se configura (diferencia con .Net framework) | Principla: Multiplataforma |
+
+
+#### .NET Framework
+
+| LVL | Lugar | Pregunta                                    | Indicio |
+|:---:| ----- | ------------------------------------------- |---------|
 
 <a href="#markdown-toc">regresar</a>
 
@@ -156,6 +168,7 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  4  | E     | Caules OOP aplican a I         |        |
 |  4  | E     | Caules OOP aplican a D         |        |
 |  4  | L     | Explica para que es el SOLID - no las nombres |
+|  3  | L     | Diferencia con Design Patterns |        |
 
 <a href="#markdown-toc">regresar</a>
 
@@ -163,7 +176,9 @@ en alguna actualizacion cambiare eso a español e ingles.
 
 | LVL | Lugar | Pregunta             | Indicio |
 |:---:| ----- | -------------------- | ------- |
-|  X  | HLE   | IoC                  |         |
+|  X  | HLE   | IoC                  |                      |
+|  X  | HULE  | IoC Tipos de Scope   | *Depende del lenguage. Ver en la parte del lenguage/Framework* |
+|  X  | HULE  | IoC Liberias         | *Depende del lenguage. Ver en la parte del lenguage/Framework* |
 |  X  | HL    | Singleton            |         |
 |  X  | HL    | Dependency Injection |         |
 |  X  | HL    | Factory              |         |
@@ -226,6 +241,7 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  5  |       | Routing                 |         |
 |  5  |       | NgModule                |         |
 |  5  | U     | Angular Template        |         |
+|  5  |  U    | Modules                 |         |
 
 <a href="#markdown-toc">regresar</a>
 
@@ -267,8 +283,47 @@ en alguna actualizacion cambiare eso a español e ingles.
 |  2  |       | Ejemplo de IaaS      | Azure VMs      |
 
 ### UNIT TEST
+
+| LVL | Lugar | Pregunta             | Indicio |
+|:---:| ----- | -------------------- | ------- |
+|     |       | Librerias            |         |
+|     |       | Mock                 |         |
+
+#### C#
+
+| LVL | Lugar | Pregunta             | Indicio |
+|:---:| ----- | -------------------- | ------- |
+|     |       | XUnit Theory         |         |
+|     |       | XUnit Fact           |         |
+
+#### Javascript
+
+### SQL
+
+| LVL | Lugar | Pregunta             | Indicio |
+|:---:| ----- | -------------------- | ------- |
+|     |       |                      |         |
+
+### CosmosDB
+
+| LVL | Lugar | Pregunta             | Indicio |
+|:---:| ----- | -------------------- | ------- |
+|     |       |                      |         |
+
+### Entity Framework
+
+| LVL | Lugar | Pregunta             | Indicio |
+|:---:| ----- | -------------------- | ------- |
+|     |       | Code First           |         |
+|     |       | QueryResult          |         |
+
+
 ### AGILE Methodology
 ### Html
 ### Boostrap
-### Unit Testing
+
+| LVL | Lugar | Pregunta             | Indicio |
+|:---:| ----- | -------------------- | ------- |
+|  1  |       | Cuantas columnas son | 12      |
+
 ### Cloud
