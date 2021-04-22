@@ -81,6 +81,7 @@ input:checked + .slider:before {
   <span class="slider round"></span>
 </label> CAMBIAR PREGUNTAS Y RESPUESTAS A INGLES
 
+*Gracias a Mel y a Walter por sus aportaciones, responder preguntas, complementar, sugerencias para la pagina y corregir typos*
 
 > NOTA: No saber algo LVL 1 es mas malo que no saber algo de LVL 5, esto es muy a criterio.  
 > Ejemplo fallar 1/10 preguntas de LVL 1 de OOP no es malo, Fallar 9/10  ya responder solo de LVL 5 puede interpretarse como que solo se busco términos rapidos sin fundamentos.  
