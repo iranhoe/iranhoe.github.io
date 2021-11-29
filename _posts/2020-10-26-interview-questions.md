@@ -415,6 +415,19 @@ en alguna actualizacion cambiare eso a español e ingles.
 
 ### Cloud
 
+### RabbitMQ
+
+### Identity Server
+
+| LVL | Lugar | Pregunta          | Question            | Indicio/Respuesta | Hint/Answer                   |
+|:---:| ----- | ----------------- | ------------------- | ----------------- | ----------------------------- |
+|  1  |       | Client            | Client              |                   | A Client is a piece of software that requests tokens from IdentityServer - either for authenticationg a user or for accessing a resource
+|  ?  |       | API Resource      | API Resource        |                   | APIs reousrces represent functionality a client want to invoke - typically modelled as Web APIs.
+|     |       | Identity Resource | Identity Resource   |                   | Identity information (aka claims) about a user, e.g. name of email address.
+|  ?  |       | Identity Token    | Identity Token      |                   | An identity token represents the outcome of an authentication process.
+|  ?  |       | Access Token      | Acess Token         |                   | An access token allows access to an API Resource.
+
+
 
 <script>
 let lgEs = true;
