@@ -1,5 +1,6 @@
 ---
 layout: post
+category: devblog
 title: "Entendiendo Azure portal"
 ---
 

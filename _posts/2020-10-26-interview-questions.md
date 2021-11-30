@@ -426,6 +426,10 @@ en alguna actualizacion cambiare eso a español e ingles.
 |     |       | Identity Resource | Identity Resource   |                   | Identity information (aka claims) about a user, e.g. name of email address.
 |  ?  |       | Identity Token    | Identity Token      |                   | An identity token represents the outcome of an authentication process.
 |  ?  |       | Access Token      | Acess Token         |                   | An access token allows access to an API Resource.
+|  ?  |       | API Scope?
+|  ?  |       | Scopes?
+|  ?  |       | Identity Scope
+|  ?  |       | Resource Scope 
 
 
 
