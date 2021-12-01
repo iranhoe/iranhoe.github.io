@@ -1740,14 +1740,122 @@ const shortcuts = [
         name: "Integrated Terminal",
         commands: [
             {
-                name: "Toggle breakpoint",
+                name: "Show integrated terminal",
                 favorite: true,
                 ides: [
                     {
                         id: VSCODE,
-                        name: "Toggle breakpoint",
+                        name: "Show integrated terminal",
                         commandId: "?",
-                        command: "F9"
+                        command: "Ctrl+`"
+                    }
+                ]
+            },
+            {
+                name: "Create new Terminal",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Create new Terminal",
+                        commandId: "?",
+                        command: "Ctrl+Shift+`"
+                    }
+                ]
+            },
+            {
+                name: "Copy selection",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Copy selection",
+                        commandId: "?",
+                        command: "Ctrl+C"
+                    }
+                ]
+            },
+            {
+                name: "Paste into active terminal",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Paste into active terminal",
+                        commandId: "?",
+                        command: "Ctrl+V"
+                    }
+                ]
+            },
+            {
+                name: "Scroll up",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Scroll up",
+                        commandId: "?",
+                        command: "Ctrl+\u21E7"
+                    }
+                ]
+            },
+            {
+                name: "Scroll down",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Scroll down",
+                        commandId: "?",
+                        command: "Ctrl+\u21E9"
+                    }
+                ]
+            },
+            {
+                name: "Scroll page up",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Scroll page up",
+                        commandId: "?",
+                        command: "Shift+PgUp"
+                    }
+                ]
+            },
+            {
+                name: "Scroll page down",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Scroll page down",
+                        commandId: "?",
+                        command: "Shift+PgDn"
+                    }
+                ]
+            },
+            {
+                name: "Scroll to top",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Scroll to top",
+                        commandId: "?",
+                        command: "Ctrl+Home"
+                    }
+                ]
+            },
+            {
+                name: "Scroll to bottom",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Scroll to bottom",
+                        commandId: "?",
+                        command: "Ctrl+End"
                     }
                 ]
             }
