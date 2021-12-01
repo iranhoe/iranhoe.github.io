@@ -1646,6 +1646,96 @@ const shortcuts = [
         ]
     },
     {
+        section: "Debug",
+        name: "Debug",
+        commands: [
+            {
+                name: "Toggle breakpoint",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle breakpoint",
+                        commandId: "?",
+                        command: "F9",
+                    }
+                ]
+            },
+            {
+                name: "Start/Continue",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Start/Continue",
+                        commandId: "?",
+                        command: "F5",
+                    }
+                ]
+            },
+            {
+                name: "Stop",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Stop",
+                        commandId: "?",
+                        command: "Shift+F5",
+                    }
+                ]
+            },
+            {
+                name: "Step into",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Step into",
+                        commandId: "?",
+                        command: "F11",
+                    }
+                ]
+            },
+            {
+                name: "Step out",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Step out",
+                        commandId: "?",
+                        command: "Shift+F11",
+                    }
+                ]
+            },
+            {
+                name: "Step over",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Step over",
+                        commandId: "?",
+                        command: "F10",
+                    }
+                ]
+            },
+            {
+                name: "Show hover",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show hover",
+                        commandId: "?",
+                        command: "Ctrl+K Ctrl+I",
+                    }
+                ]
+            }
+        ]
+    },,
+    {
         section: "refactor",
         name: "Refactor",
         commands: [
