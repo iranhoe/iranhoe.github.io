@@ -776,12 +776,10 @@ getClassName = (column, ide) => {
         for(let i=0; i < shortcuts.length; i++) {
             const title = document.createElement('h2');
             const table = document.createElement('table');
-            const tableHead = document.createElement('thead');
-            const tableBody = document.createElement('tbody');
+            const tableHead = createRowForHeader();
+            const tableBody = createRowPerCommands(shortcuts[i].commands)           
             
             title.innerText = shortcuts[i].name;
-            createHeader(tableHead);
-            createRowPerCommands(shortcuts[i].commands, tableBody)
             
             table.appendChild(tableHead);
             table.appendChild(tableBody);
@@ -790,51 +788,53 @@ getClassName = (column, ide) => {
         }
     }
 
-    // create header
-    function createHeader(tableHead) {
+    createRowForHeader = () => {
+        const tableHead = document.createElement('thead');
         const tr = document.createElement('tr');
         tableHead.appendChild(tr);
-        for (let iide = 0; iide < IDEs.length; iide++) {
-            for (let ic = 0; ic < columns.length; ic++) {
-                const td = document.createElement('th');
-                td.appendChild(document.createTextNode(`${IDEs[iide].name}`));
-                tr.appendChild(td);
-            }
-        }
-    }
+        addHeaderData(tableHead);
+        return tableHead;
 
-    // rows
-    function createRowPerCommands(commands, tableBody) {
-        for (let ci = 0; ci < commands.length; ci++) {
+    }
+    createRowPerCommands = (commands) => {
+        const tableBody = document.createElement('tbody');
+        for (let i = 0; i < commands.length; i++) {
             const tr = document.createElement('tr');
             tableBody.appendChild(tr);
-            createColumns(commands[ci], tr);
+            addDataToRow(tr, commands[i]);
         }
+        return tableBody;
     }
 
-    // columns per ide
-    function createColumns(command, tr) {
-        for (let iide = 0; iide < IDEs.length; iide++) {
-            const idesKeys = command.ides.filter(x => x.id === IDEs[iide].id);
-            const ideKeys = idesKeys.length > 0 ? idesKeys[0] : null;
+    function addDataToRow(tr, command) {
+        for (let i = 0; i < IDEs.length; i++) {
+            for (let j = 0; j < columns.length; j++) {
+                const idesKeys = command.ides.filter(x => x.id === IDEs[i].id);
+                const ideKeys = idesKeys.length > 0 ? idesKeys[0] : null;
+                const columnName = columns[j].column;
+                const cell =  ideKeys ? ideKeys[columnName] : "?";
 
-            for (let ic = 0; ic < columns.length; ic++) {
-                const td = createCell(ideKeys, columns[ic], IDEs[iide]);
+                const td = createCell(columns[j], IDEs[i], cell, "td");
                 tr.appendChild(td);
             }
         }
     }
 
-    function createCell(ideKeys, columnItem, ide) {
-        const columnName = columnItem.column;
-        const cell =  ideKeys ? ideKeys[columnName] : "?";
-        const td = document.createElement('td');
-
-        td.classList.add(`${columnName}-ide-${ide.class}`);
-        td.appendChild(document.createTextNode(`${cell}`));
-        return td;  
+    function addHeaderData(tr) {
+        for (let i = 0; i < IDEs.length; i++) {
+            for (let j = 0; j < columns.length; j++) {
+                const td = createCell(columns[j], IDEs[i], IDEs[i].name, "th");
+                tr.appendChild(td);
+            }
+        }
     }
 
+    createCell = (column, ide, text, type) => {
+        const td = document.createElement(type);
+        td.classList.add(getClassName(column, ide));
+        td.appendChild(document.createTextNode(text));
+        return td;  
+    }
     
     createSections();
 })();
