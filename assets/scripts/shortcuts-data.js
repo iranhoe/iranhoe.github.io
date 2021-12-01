@@ -19,7 +19,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Show Command Palette",
                         commandId: "?",
-                        command: "Ctrl+Shift+P, F1",
+                        command: "Ctrl+Shift+P or F1",
                     }
                 ]
             },
@@ -451,7 +451,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Toggle block comment",
                         commandId: "?",
-                        command: "Alt+Z",
+                        command: "Shift+Alt+Z",
                     }
                 ]
             },
@@ -474,6 +474,18 @@ const shortcuts = [
         name: "Navigation",
         commands: [
             {
+                name: "Show all Symbols",
+                favorite: false,
+                ides: [
+                                        {
+                        id: VSCODE,
+                        name: "Show all Symbols",
+                        commandId: "?",
+                        command: "Ctrl+T",
+                    }
+                ]
+            },
+            {
                 name: "Go to",
                 favorite: true,
                 ides: [
@@ -488,6 +500,66 @@ const shortcuts = [
                         name: "Go to Line...",
                         commandId: "?",
                         command: "Ctrl+G",
+                    }
+                ]
+            },
+            {
+                name: "Go to File",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Go to File...",
+                        commandId: "?",
+                        command: "Ctrl+P",
+                    }
+                ]
+            },
+            {
+                name: "Go to Symbol",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Go to Symbol...",
+                        commandId: "?",
+                        command: "Ctrl+Shift+O",
+                    }
+                ]
+            },
+            {
+                name: "Show Problems panel",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show Problems panel",
+                        commandId: "?",
+                        command: "Ctrl+Shift+M",
+                    }
+                ]
+            },
+            {
+                name: "Go to next error or warning",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Go to next error or warning",
+                        commandId: "?",
+                        command: "F8",
+                    }
+                ]
+            },
+            {
+                name: "Go to previous error or warning",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Go to previous error or warning",
+                        commandId: "?",
+                        command: "Shift+F8",
                     }
                 ]
             },
@@ -550,7 +622,13 @@ const shortcuts = [
                         command: "F12",
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        section: "search",
+        name: "Search and replace",
+        commands: [
             {
                 name: "Find",
                 favorite: true,
@@ -586,13 +664,7 @@ const shortcuts = [
                         command: "Ctrl+Shift+F",
                     }
                 ]
-            }
-        ]
-    },
-    {
-        section: "search",
-        name: "Search and replace",
-        commands: [
+            },
             {
                 name: "Toggle outlining expansion",
                 favorite: true,
@@ -689,20 +761,22 @@ const IDEs = [
     { name: "visual studio code", class:"vscode", id: VSCODE }
 ];
 
-switchDisplay = (className, visible) => { 
-    document.querySelectorAll("."+ className) .forEach((item, inde) => {
-        item.style.display = visible ? "none" : "table-cell";
-    });
-}
 
-switchClass = (className, visibleClass) => { 
-    document.querySelectorAll("."+ className) .forEach((item, inde) => {
-        item.classList.toggle(visibleClass);
-    });
-}
 
 // Generate table
 (function() {
+    switchDisplay = (className, visible) => { 
+        document.querySelectorAll("."+ className) .forEach((item, inde) => {
+            item.style.display = visible ? "none" : "table-cell";
+        });
+    }
+    
+    switchClass = (className, visibleClass) => { 
+        document.querySelectorAll("."+ className) .forEach((item, inde) => {
+            item.classList.toggle(visibleClass);
+        });
+    }
+
     const tables = document.querySelector("#tables");
 
     // sections
@@ -753,112 +827,69 @@ switchClass = (className, visibleClass) => {
     // columns per ide
     function createColumns(command, tr) {
         for (let iide = 0; iide < IDEs.length; iide++) {
-            const ide = command.ides.filter(x => x.id === IDEs[iide].id);
-            for (let ic = 0; ic < columns.length; ic++) {
-                let cell = "?";
-                if (ide.length > 0) {
-                    const columnName = columns[ic].column;
-                    cell = ide[0][columnName];
-                }
+            const idesKeys = command.ides.filter(x => x.id === IDEs[iide].id);
+            const ideKeys = idesKeys.length > 0 ? idesKeys[0] : null;
 
-                const td = document.createElement('td');
-                td.appendChild(document.createTextNode(`${cell}`));
+            for (let ic = 0; ic < columns.length; ic++) {
+                const td = createCell(ideKeys, columns[ic], IDEs[iide]);
                 tr.appendChild(td);
             }
         }
     }
 
+    function createCell(ideKeys, columnItem, ide) {
+        const columnName = columnItem.column;
+        const cell =  ideKeys ? ideKeys[columnName] : "?";
+        const td = document.createElement('td');
+
+        td.classList.add(`ide-${columnName}-${ide.class}`);
+        td.appendChild(document.createTextNode(`${cell}`));
+        return td;  
+    }
+
+    function createHideConfigHeader(){
+        const configRow = document.querySelector("#config-th");
+        for (let i = 0; i < columns.length; i++) {
+            const td = document.createElement('td');
+            td.appendChild(document.createTextNode(`${columns[i].name}`));
+            configRow.appendChild(td);
+        }
+    
+    }
+    
+    function createHideConfig(IDE) {
+        const configTable = document.querySelector("#config-tb");
+        const tr = document.createElement('tr');
+        const tdName = document.createElement('td');
+        tdName.appendChild(document.createTextNode(`${IDE.name}`));
+        tr.appendChild(tdName);
+        for (let i = 0; i < columns.length; i++) {
+            const classToHide = columns[i].class + "-" + IDE.class;
+            console.log(classToHide);
+            const label = document.createElement('label');
+            label.className = "switch";
+            
+            const input = document.createElement('input');
+            input.setAttribute('type', 'checkbox');
+            input.
+            addEventListener('click', (e, i) => {
+                console.log("hit", classToHide, input.checked);
+                switchDisplay(classToHide, input.checked)
+            });
+            
+            const span = document.createElement('span');
+            span.className = "slider round";
+            label.appendChild(input);
+            label.appendChild(span);
+    
+            const td = document.createElement('td');
+            td.appendChild(label);
+            tr.appendChild(td);
+        }
+    
+        configTable.appendChild(tr);
+    }
+    
+    createHideConfigHeader();
     createSections();
 })();
-
-function createHideConfigHeader(){
-    const configRow = document.querySelector("#config-th");
-    for (let i = 0; i < columns.length; i++) {
-        const td = document.createElement('td');
-        td.appendChild(document.createTextNode(`${columns[i].name}`));
-        configRow.appendChild(td);
-    }
-
-}
-
-function createHideConfig(IDE) {
-    const configTable = document.querySelector("#config-tb");
-    const tr = document.createElement('tr');
-    const tdName = document.createElement('td');
-    tdName.appendChild(document.createTextNode(`${IDE.name}`));
-    tr.appendChild(tdName);
-    for (let i = 0; i < columns.length; i++) {
-        const classToHide = columns[i].class + "-" + IDE.class;
-        console.log(classToHide);
-        const label = document.createElement('label');
-        label.className = "switch";
-        
-        const input = document.createElement('input');
-        input.setAttribute('type', 'checkbox');
-        input.
-        addEventListener('click', (e, i) => {
-            console.log("hit");
-            switchDisplay(classToHide, input.checked)
-        });
-        
-        const span = document.createElement('span');
-        span.className = "slider round";
-        label.appendChild(input);
-        label.appendChild(span);
-
-        const td = document.createElement('td');
-        td.appendChild(label);
-        tr.appendChild(td);
-    }
-
-    configTable.appendChild(tr);
-}
-
-createHideConfigHeader();
-
-for(let i = 0; i < IDEs.length; i++) {  
-    let classForId = "ide-" + IDEs[i].class;
-
-    createHideConfig(IDEs[i]);
-    // const ideControl = document.querySelector("#"+classForId);
-    // ideControl.addEventListener('click', (e, i) => switchDisplay(classForId, ideControl.checked));
-
-    let colName    = (cols*i)+nameIndex;
-    let colId      = (cols*i)+commandIdIndex;
-    let colCommand = (cols*i)+commandIndex;
-    console.log(colName, colId, colCommand);
-
-    // ADDING CLASES
-    const tables = document.querySelector("#tables");
-
-    // name
-    tables.querySelectorAll(`thead tr th:nth-child(${colName})`).forEach((item, index) => {
-        item.classList.add(classForId);
-        item.classList.add("name-" + classForId);
-    });
-    tables.querySelectorAll(`tbody tr td:nth-child(${colName})`).forEach((item, index) => {
-        item.classList.add(classForId);
-        item.classList.add("name-" + classForId);
-    });
-
-    // command
-    tables.querySelectorAll(`thead tr th:nth-child(${colId})`).forEach((item, index) => {
-        console.log(classForId, item.innerHTML);
-        item.classList.add(classForId);
-        item.classList.add("com-"+ classForId);
-    });
-    tables.querySelectorAll(`tbody tr td:nth-child(${colId})`).forEach((item, index) => {
-        item.classList.add(classForId);
-        item.classList.add("com-"+ classForId);
-    });
-
-    // keys
-    tables.querySelectorAll(`thead tr th:nth-child(${colCommand})`).forEach((item, index) => {
-        item.classList.add(classForId);
-        item.classList.add("keys-" + classForId);
-    });
-    tables.querySelectorAll(`tbody tr td:nth-child(${colCommand})`).forEach((item, index) => {
-        item.classList.add(classForId);
-        item.classList.add("keys-" + classForId);
-    });
-}
