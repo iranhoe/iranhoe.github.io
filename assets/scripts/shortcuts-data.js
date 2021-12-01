@@ -796,25 +796,30 @@ getClassName = (column, ide) => {
         return tableHead;
 
     }
+    
     createRowPerCommands = (commands) => {
         const tableBody = document.createElement('tbody');
         for (let i = 0; i < commands.length; i++) {
             const tr = document.createElement('tr');
             tableBody.appendChild(tr);
-            addDataToRow(tr, commands[i]);
+            addDataToRow(tr, commands[i], getBodyCellText);
         }
         return tableBody;
     }
 
-    function addDataToRow(tr, command) {
+    getBodyCellText = (ide, column, command) => {
+        const idesKeys = command.ides.filter(x => x.id === ide.id);
+        const ideKeys = idesKeys.length > 0 ? idesKeys[0] : null;
+        const columnName = column.column;
+        const cell =  ideKeys ? ideKeys[columnName] : "?";
+        return cell;
+    }
+
+    addDataToRow = (tr, command, getText) => {
         for (let i = 0; i < IDEs.length; i++) {
             for (let j = 0; j < columns.length; j++) {
-                const idesKeys = command.ides.filter(x => x.id === IDEs[i].id);
-                const ideKeys = idesKeys.length > 0 ? idesKeys[0] : null;
-                const columnName = columns[j].column;
-                const cell =  ideKeys ? ideKeys[columnName] : "?";
-
-                const td = createCell(columns[j], IDEs[i], cell, "td");
+                const text = getText(IDEs[i], columns[j], command);
+                const td = createCell(columns[j], IDEs[i], text, "td");
                 tr.appendChild(td);
             }
         }
