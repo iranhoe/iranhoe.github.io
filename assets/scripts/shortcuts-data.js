@@ -1657,7 +1657,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Toggle breakpoint",
                         commandId: "?",
-                        command: "F9",
+                        command: "F9"
                     }
                 ]
             },
@@ -1669,7 +1669,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Start/Continue",
                         commandId: "?",
-                        command: "F5",
+                        command: "F5"
                     }
                 ]
             },
@@ -1681,7 +1681,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Stop",
                         commandId: "?",
-                        command: "Shift+F5",
+                        command: "Shift+F5"
                     }
                 ]
             },
@@ -1693,7 +1693,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Step into",
                         commandId: "?",
-                        command: "F11",
+                        command: "F11"
                     }
                 ]
             },
@@ -1705,7 +1705,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Step out",
                         commandId: "?",
-                        command: "Shift+F11",
+                        command: "Shift+F11"
                     }
                 ]
             },
@@ -1717,7 +1717,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Step over",
                         commandId: "?",
-                        command: "F10",
+                        command: "F10"
                     }
                 ]
             },
@@ -1729,12 +1729,30 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Show hover",
                         commandId: "?",
-                        command: "Ctrl+K Ctrl+I",
+                        command: "Ctrl+K Ctrl+I"
                     }
                 ]
             }
         ]
-    },,
+    },
+    {
+        section: "integratedTerminal",
+        name: "Integrated Terminal",
+        commands: [
+            {
+                name: "Toggle breakpoint",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle breakpoint",
+                        commandId: "?",
+                        command: "F9"
+                    }
+                ]
+            }
+        ]
+    },
     {
         section: "refactor",
         name: "Refactor",
