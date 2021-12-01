@@ -842,12 +842,18 @@ const IDEs = [
         const cell =  ideKeys ? ideKeys[columnName] : "?";
         const td = document.createElement('td');
 
-        td.classList.add(`ide-${columnName}-${ide.class}`);
+        td.classList.add(`${columnName}-ide-${ide.class}`);
         td.appendChild(document.createTextNode(`${cell}`));
         return td;  
     }
 
-    function createHideConfigHeader(){
+    
+    createSections();
+})();
+
+// Generate Config
+(function() {
+    createHideConfigHeader = () => {
         const configRow = document.querySelector("#config-th");
         for (let i = 0; i < columns.length; i++) {
             const td = document.createElement('td');
@@ -857,39 +863,48 @@ const IDEs = [
     
     }
     
-    function createHideConfig(IDE) {
+    createHideConfig = (IDE) => {
         const configTable = document.querySelector("#config-tb");
         const tr = document.createElement('tr');
         const tdName = document.createElement('td');
         tdName.appendChild(document.createTextNode(`${IDE.name}`));
         tr.appendChild(tdName);
+        configTable.appendChild(tr);
+
         for (let i = 0; i < columns.length; i++) {
             const classToHide = columns[i].class + "-" + IDE.class;
-            console.log(classToHide);
-            const label = document.createElement('label');
-            label.className = "switch";
-            
-            const input = document.createElement('input');
-            input.setAttribute('type', 'checkbox');
-            input.
-            addEventListener('click', (e, i) => {
-                console.log("hit", classToHide, input.checked);
-                switchDisplay(classToHide, input.checked)
-            });
-            
-            const span = document.createElement('span');
-            span.className = "slider round";
-            label.appendChild(input);
-            label.appendChild(span);
-    
+            const label = createCheckbox(classToHide);
             const td = document.createElement('td');
             td.appendChild(label);
             tr.appendChild(td);
         }
-    
-        configTable.appendChild(tr);
+    }
+
+    createCheckbox = (className) => {
+        console.log("creating checkbox", className);
+        const label = document.createElement('label');
+        const input = document.createElement('input');
+        const span = document.createElement('span');
+
+        
+        input.setAttribute('type', 'checkbox');
+        input.addEventListener('click', (e, i) => {
+            console.log("hit", className, input.checked);
+            switchDisplay(className, input.checked)
+        });
+        
+        span.className = "slider round";
+
+        label.className = "switch";
+        label.appendChild(input);
+        label.appendChild(span);
+
+        return label;
+    }
+
+    for(let i =0; i < IDEs.length; i++) {
+        createHideConfig(IDEs[i]);
     }
     
     createHideConfigHeader();
-    createSections();
 })();
