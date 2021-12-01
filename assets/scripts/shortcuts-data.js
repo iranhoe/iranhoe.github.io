@@ -762,41 +762,29 @@ const IDEs = [
 ];
 
 
+getClassName = (column, ide) => {
+    const name =  column.class + "-" + ide.class;
+    console.log(name);
+    return name;
+}
 
 // Generate table
 (function() {
-    switchDisplay = (className, visible) => { 
-        document.querySelectorAll("."+ className) .forEach((item, inde) => {
-            item.style.display = visible ? "none" : "table-cell";
-        });
-    }
-    
-    switchClass = (className, visibleClass) => { 
-        document.querySelectorAll("."+ className) .forEach((item, inde) => {
-            item.classList.toggle(visibleClass);
-        });
-    }
-
     const tables = document.querySelector("#tables");
 
-    // sections
     function createSections() {
         for(let i=0; i < shortcuts.length; i++) {
             const title = document.createElement('h2');
-            title.innerText = shortcuts[i].name;
-
             const table = document.createElement('table');
-
             const tableHead = document.createElement('thead');
-            table.appendChild(tableHead);
-            createHeader(tableHead);
-
             const tableBody = document.createElement('tbody');
+            
+            title.innerText = shortcuts[i].name;
+            createHeader(tableHead);
+            createRowPerCommands(shortcuts[i].commands, tableBody)
+            
+            table.appendChild(tableHead);
             table.appendChild(tableBody);
-
-            const commands = shortcuts[i].commands;
-            createRowPerCommands(commands, tableBody)
-
             tables.appendChild(title);
             tables.appendChild(table);
         }
@@ -853,6 +841,12 @@ const IDEs = [
 
 // Generate Config
 (function() {
+    switchDisplay = (className, visible) => { 
+        document.querySelectorAll("."+ className) .forEach((item) => {
+            item.style.display = visible ? "none" : "table-cell";
+        });
+    }  
+
     createHideConfigHeader = () => {
         const configRow = document.querySelector("#config-th");
         for (let i = 0; i < columns.length; i++) {
@@ -872,8 +866,7 @@ const IDEs = [
         configTable.appendChild(tr);
 
         for (let i = 0; i < columns.length; i++) {
-            const classToHide = columns[i].class + "-" + IDE.class;
-            const label = createCheckbox(classToHide);
+            const label = createCheckbox(getClassName(columns[i], IDE));
             const td = document.createElement('td');
             td.appendChild(label);
             tr.appendChild(td);
@@ -881,25 +874,24 @@ const IDEs = [
     }
 
     createCheckbox = (className) => {
-        console.log("creating checkbox", className);
         const label = document.createElement('label');
-        const input = document.createElement('input');
-        const span = document.createElement('span');
-
-        
-        input.setAttribute('type', 'checkbox');
-        input.addEventListener('click', (e, i) => {
-            console.log("hit", className, input.checked);
-            switchDisplay(className, input.checked)
-        });
-        
+        const span = document.createElement('span');     
         span.className = "slider round";
-
         label.className = "switch";
-        label.appendChild(input);
+        label.appendChild(createInputCheckbox(className));
         label.appendChild(span);
 
         return label;
+    }
+
+    createInputCheckbox = (className) => {
+        const input = document.createElement('input');
+        input.setAttribute('type', 'checkbox');
+        input.addEventListener('click', (e, i) => {
+            switchDisplay(className, input.checked)
+        });
+        
+        return input;
     }
 
     for(let i =0; i < IDEs.length; i++) {
