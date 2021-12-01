@@ -1448,6 +1448,204 @@ const shortcuts = [
         ]
     },
     {
+        section: "display",
+        name: "Display",
+        commands: [
+            {
+                name: "Toggle Full screen",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle Full screen",
+                        commandId: "?",
+                        command: "F11",
+                    }
+                ]
+            },
+            {
+                name: "Toggle editor layout (horizontal/vertical)",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle editor layout (horizontal/vertical)",
+                        commandId: "?",
+                        command: "Shift+Alt+0",
+                    }
+                ]
+            },
+            {
+                name: "Zoom in",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Zoom in",
+                        commandId: "?",
+                        command: "Ctrl+=",
+                    }
+                ]
+            },
+            {
+                name: "Zoom out",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Zoom out",
+                        commandId: "?",
+                        command: "Ctrl+-",
+                    }
+                ]
+            },
+            {
+                name: "Toggle Sidebar visibility",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle Sidebar visibility",
+                        commandId: "?",
+                        command: "Ctrl+B",
+                    }
+                ]
+            },
+            {
+                name: "Show Explorer / Toggle focus",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show Explorer / Toggle focus",
+                        commandId: "?",
+                        command: "Ctrl+Shift+E",
+                    }
+                ]
+            },
+            {
+                name: "Show Search",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show Search",
+                        commandId: "?",
+                        command: "Ctrl+Shift+F",
+                    }
+                ]
+            },
+            {
+                name: "Show Source Control",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show Source Control",
+                        commandId: "?",
+                        command: "Ctrl+Shift+G",
+                    }
+                ]
+            },
+            {
+                name: "Show Debug",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show Debug",
+                        commandId: "?",
+                        command: "Ctrl+Shift+D",
+                    }
+                ]
+            },
+            {
+                name: "Show Extensions",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show Extensions",
+                        commandId: "?",
+                        command: "Ctrl+Shift+X",
+                    }
+                ]
+            },
+            {
+                name: "Replace in files",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Replace in files",
+                        commandId: "?",
+                        command: "Ctrl+Shift+H",
+                    }
+                ]
+            },
+            {
+                name: "Toggle Search details",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle Search details",
+                        commandId: "?",
+                        command: "Ctrl+Shift+J",
+                    }
+                ]
+            },
+            {
+                name: "Show Output panel",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show Output panel",
+                        commandId: "?",
+                        command: "Ctrl+Shift+U",
+                    }
+                ]
+            },
+            {
+                name: "Open markdown preview",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Open markdown preview",
+                        commandId: "?",
+                        command: "Ctrl+Shift+V",
+                    }
+                ]
+            },
+            {
+                name: "Open markdown preview to the side",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Open markdown preview to the side",
+                        commandId: "?",
+                        command: "Ctrl+K V",
+                    }
+                ]
+            },
+            {
+                name: "Zen Mode (Esc Esc to exit",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Zen Mode (Esc Esc to exit",
+                        commandId: "?",
+                        command: "Ctrl+K Z",
+                    }
+                ]
+            }
+        ]
+    },
+    {
         section: "refactor",
         name: "Refactor",
         commands: [
