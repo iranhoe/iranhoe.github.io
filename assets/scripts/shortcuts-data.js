@@ -1,6 +1,11 @@
 const VS2022 = "vs2022";
 const VSCODE = "vscode";
 
+const nameIndex = 1;
+const commandIdIndex = 2;
+const commandIndex = 3;
+const cols = 3;
+
 const shortcuts = [
     {
         section: "general",
@@ -122,13 +127,13 @@ const shortcuts = [
                         id: VS2022,
                         name: "Move selected lines up",
                         commandId: "Edit.MoveSelectedLinesUp",
-                        command: "Alt+Up Arrow",
+                        command: "Alt+\u21E7",
                     },
                     {
                         id: VSCODE,
                         name: "Move line up",
                         commandId: "?",
-                        command: "Alt+Up Arrow",
+                        command: "Alt+\u21E7",
                     }
                 ]
             },
@@ -140,13 +145,13 @@ const shortcuts = [
                         id: VS2022,
                         name: "Move selected lines down",
                         commandId: "Edit.MoveSelectedLinesDown",
-                        command: "Alt+Up Arrow",
+                        command: "Alt+\u21E9",
                     },
                     {
                         id: VSCODE,
-                        name: "Move line up",
+                        name: "Move line down",
                         commandId: "?",
-                        command: "Alt+Up Arrow",
+                        command: "Alt+\u21E9",
                     }
                 ]
             },
@@ -158,7 +163,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Copy Line Up",
                         commandId: "?",
-                        command: "Shift+Alt+Up Arrow",
+                        command: "Shift+Alt+\u21E7",
                     }
                 ]
             },
@@ -290,7 +295,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Scroll line up",
                         commandId: "?",
-                        command: "Ctrl+Up Arrow",
+                        command: "Ctrl+\u21E7",
                     }
                 ]
             },
@@ -302,7 +307,7 @@ const shortcuts = [
                         id: VSCODE,
                         name: "Scroll line down",
                         commandId: "?",
-                        command: "Ctrl+Down Arrow",
+                        command: "Ctrl+\u21E9",
                     }
                 ]
             },
@@ -658,11 +663,6 @@ const shortcuts = [
     },
 ];
 
-const nameIndex = 1;
-const commandIdIndex = 2;
-const commandIndex = 3;
-const cols = 3;
-
 const columns = [
     {
         name: "Name of the IDE/Edit",
@@ -685,8 +685,8 @@ const columns = [
 ]
 
 const IDEs = [
-    { name: "visual studio 2022", class:"vs2022", id: "vs2022" },
-    { name: "visual studio code", class:"vscode", id: "vscode" }
+    { name: "visual studio 2022", class:"vs2022", id: VS2022 },
+    { name: "visual studio code", class:"vscode", id: VSCODE }
 ];
 
 switchDisplay = (className, visible) => { 
@@ -733,14 +733,7 @@ switchClass = (className, visibleClass) => {
         const tr = document.createElement('tr');
         tableHead.appendChild(tr);
         for (let iide = 0; iide < IDEs.length; iide++) {
-            // const ide = command.ides.filter(x => x.id === IDEs[iide].id);
             for (let ic = 0; ic < columns.length; ic++) {
-                // let cell = "?";
-                // if (ide.length > 0) {
-                //     const columnName = columns[ic].column;
-                //     cell = ide[0][columnName];
-                // }
-
                 const td = document.createElement('th');
                 td.appendChild(document.createTextNode(`${IDEs[iide].name}`));
                 tr.appendChild(td);
@@ -778,52 +771,94 @@ switchClass = (className, visibleClass) => {
     createSections();
 })();
 
+function createHideConfigHeader(){
+    const configRow = document.querySelector("#config-th");
+    for (let i = 0; i < columns.length; i++) {
+        const td = document.createElement('td');
+        td.appendChild(document.createTextNode(`${columns[i].name}`));
+        configRow.appendChild(td);
+    }
 
-for(let i = 0; i < IDEs.length; i++) {
+}
 
+function createHideConfig(IDE) {
+    const configTable = document.querySelector("#config-tb");
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    tdName.appendChild(document.createTextNode(`${IDE.name}`));
+    tr.appendChild(tdName);
+    for (let i = 0; i < columns.length; i++) {
+        const classToHide = columns[i].class + "-" + IDE.class;
+        console.log(classToHide);
+        const label = document.createElement('label');
+        label.className = "switch";
+        
+        const input = document.createElement('input');
+        input.setAttribute('type', 'checkbox');
+        input.
+        addEventListener('click', (e, i) => {
+            console.log("hit");
+            switchDisplay(classToHide, input.checked)
+        });
+        
+        const span = document.createElement('span');
+        span.className = "slider round";
+        label.appendChild(input);
+        label.appendChild(span);
+
+        const td = document.createElement('td');
+        td.appendChild(label);
+        tr.appendChild(td);
+    }
+
+    configTable.appendChild(tr);
+}
+
+createHideConfigHeader();
+
+for(let i = 0; i < IDEs.length; i++) {  
     let classForId = "ide-" + IDEs[i].class;
-    const ideControl = document.querySelector("#"+classForId);
-    ideControl.addEventListener('click', (e, i) => switchDisplay(classForId, ideControl.checked));
+
+    createHideConfig(IDEs[i]);
+    // const ideControl = document.querySelector("#"+classForId);
+    // ideControl.addEventListener('click', (e, i) => switchDisplay(classForId, ideControl.checked));
 
     let colName    = (cols*i)+nameIndex;
     let colId      = (cols*i)+commandIdIndex;
     let colCommand = (cols*i)+commandIndex;
     console.log(colName, colId, colCommand);
 
+    // ADDING CLASES
+    const tables = document.querySelector("#tables");
+
     // name
-    document.querySelectorAll(`thead tr th:nth-child(${colName})`).forEach((item, index) => {
+    tables.querySelectorAll(`thead tr th:nth-child(${colName})`).forEach((item, index) => {
         item.classList.add(classForId);
-        item.classList.add("name-ide");
+        item.classList.add("name-" + classForId);
     });
-    document.querySelectorAll(`tbody tr td:nth-child(${colName})`).forEach((item, index) => {
+    tables.querySelectorAll(`tbody tr td:nth-child(${colName})`).forEach((item, index) => {
         item.classList.add(classForId);
-        item.classList.add("name-ide");
+        item.classList.add("name-" + classForId);
     });
 
     // command
-    document.querySelectorAll(`thead tr th:nth-child(${colId})`).forEach((item, index) => {
+    tables.querySelectorAll(`thead tr th:nth-child(${colId})`).forEach((item, index) => {
         console.log(classForId, item.innerHTML);
         item.classList.add(classForId);
-        item.classList.add("com-ide");
+        item.classList.add("com-"+ classForId);
     });
-    document.querySelectorAll(`tbody tr td:nth-child(${colId})`).forEach((item, index) => {
+    tables.querySelectorAll(`tbody tr td:nth-child(${colId})`).forEach((item, index) => {
         item.classList.add(classForId);
-        item.classList.add("com-ide");
+        item.classList.add("com-"+ classForId);
     });
 
     // keys
-    document.querySelectorAll(`thead tr th:nth-child(${colCommand})`).forEach((item, index) => {
+    tables.querySelectorAll(`thead tr th:nth-child(${colCommand})`).forEach((item, index) => {
         item.classList.add(classForId);
-        item.classList.add("keys-ide");
+        item.classList.add("keys-" + classForId);
     });
-    document.querySelectorAll(`tbody tr td:nth-child(${colCommand})`).forEach((item, index) => {
+    tables.querySelectorAll(`tbody tr td:nth-child(${colCommand})`).forEach((item, index) => {
         item.classList.add(classForId);
-        item.classList.add("keys-ide");
+        item.classList.add("keys-" + classForId);
     });
 }
-
-const checkboxCom = document.querySelector("#com-switch");
-const checkboxName = document.querySelector("#name-switch");
-
-checkboxCom.addEventListener('click', (e, i) => switchClass("com-ide", "hide-com"));
-checkboxName.addEventListener('click', (e, i) => switchClass("name-ide", "hide-name"));

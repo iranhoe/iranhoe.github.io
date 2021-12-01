@@ -20,8 +20,8 @@ title: "Shortcuts"
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 40px;
+  height: 24px;
 }
 
 .switch input { 
@@ -45,8 +45,8 @@ title: "Shortcuts"
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -63,14 +63,14 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 14px;
 }
 
 .slider.round:before {
@@ -79,27 +79,22 @@ input:checked + .slider:before {
 </style>
 
 ## Config Columns 
-<label class="switch">
-  <input id="com-switch" type="checkbox" />
-  <span class="slider round"></span>
-</label> Hide Command Id
+<table>
+    <thead>
+        <tr id="config-th">
+            <td>Nombre</td>
+        </tr>
+    </thead>
+    <tbody id="config-tb"></tbody>
+</table>
 
-<label class="switch">
-  <input id="name-switch" type="checkbox" />
-  <span class="slider round"></span>
-</label> Hide Name
 
-## Config IDE/Editor
+## Code 
 
-<label class="switch">
-  <input id="ide-vs2022" type="checkbox" value="true" />
-  <span class="slider round"></span>
-</label> Hide VS2022
-
-<label class="switch">
-  <input id="ide-vscode" type="checkbox" value="true" />
-  <span class="slider round"></span>
-</label> Hide VSCode
+- &#8679; = Arrow Up
+- &#8681; = Arrow Down
+- &#8678; = Arrow Left 
+- &#8680; = Arrow Right
 
 <div id="tables"></div>
 
