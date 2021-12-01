@@ -638,6 +638,126 @@ const shortcuts = [
                         name: "Find",
                         commandId: "Edit.Find",
                         command: "Ctrl+F",
+                    },
+                    {
+                        id: VSCODE,
+                        name: "Find",
+                        commandId: "Edit.Find",
+                        command: "Ctrl+F",
+                    }
+                ]
+            },
+            {
+                name: "Replace",
+                favorite: true,
+                ides: [
+                    {
+                        id: VS2022,
+                        name: "Replace",
+                        commandId: "?",
+                        command: "Ctrl+H",
+                    },
+                    {
+                        id: VSCODE,
+                        name: "Find",
+                        commandId: "?",
+                        command: "Ctrl+H",
+                    }
+                ]
+            },
+            {
+                name: "Find Next",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Find next",
+                        commandId: "?",
+                        command: "F3",
+                    }
+                ]
+            },
+            {
+                name: "Find previous",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Find previous",
+                        commandId: "?",
+                        command: "Shift+F3",
+                    }
+                ]
+            },
+            {
+                name: "Select all occurrences of Find match",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Select all occurrences of Find match",
+                        commandId: "?",
+                        command: "Alt+Enter",
+                    }
+                ]
+            },
+            {
+                name: "Add selection to next Find match",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Add selection to next Find match",
+                        commandId: "?",
+                        command: "Ctrl+D",
+                    }
+                ]
+            },
+            {
+                name: "Move last selection to next Find match",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Move last selection to next Find match",
+                        commandId: "?",
+                        command: "Ctrl+K Ctrl+D",
+                    }
+                ]
+            },
+            {
+                name: "Toggle case-sensitive",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle case-sensitive",
+                        commandId: "?",
+                        command: "Alt+C",
+                    }
+                ]
+            },
+            {
+                name: "Toggle regex",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle regex",
+                        commandId: "?",
+                        command: "Alt+R",
+                    }
+                ]
+            },
+            {
+                name: "Toggle whole word",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Toggle whole word",
+                        commandId: "?",
+                        command: "Alt+W",
                     }
                 ]
             },
@@ -676,16 +796,328 @@ const shortcuts = [
                         command: "Ctrl+M, Ctrl+M",
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        section: "multicursor",
+        name: "Multi-cursor and selection",
+        commands: [
             {
-                name: "Add selection to next Find match",
-                favorite: true,
+                name: "Insert cursor",
+                favorite: false,
                 ides: [
                     {
                         id: VSCODE,
-                        name: "Add selection to next Find match",
+                        name: "Insert cursor",
                         commandId: "?",
-                        command: "Ctrl+D",
+                        command: "Alt+Click",
+                    }
+                ]
+            },
+            {
+                name: "Insert cursor above",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Insert cursor above",
+                        commandId: "?",
+                        command: "Ctrl+Alt+\u21E7",
+                    }
+                ]
+            },
+            {
+                name: "Insert cursor below",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Insert cursor below",
+                        commandId: "?",
+                        command: "Ctrl+Alt+\u21E9",
+                    }
+                ]
+            },
+            {
+                name: "Undo last cursor operation",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Undo last cursor operation",
+                        commandId: "?",
+                        command: "Ctrl+U",
+                    }
+                ]
+            },
+            {
+                name: "Insert cursor at end of each line selected",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Insert cursor at end of each line selected",
+                        commandId: "?",
+                        command: "Shift+Alt+I",
+                    }
+                ]
+            },
+            {
+                name: "Select current line",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Select current line",
+                        commandId: "?",
+                        command: "Ctrl+L",
+                    }
+                ]
+            },
+            {
+                name: "Select all occurrences of current selection",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Select all occurrences of current selection",
+                        commandId: "?",
+                        command: "Ctrl+Shift+L",
+                    }
+                ]
+            },
+            {
+                name: "Select all occurrences of current word",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Select all occurrences of current word",
+                        commandId: "?",
+                        command: "Ctrl+F2",
+                    }
+                ]
+            },
+            {
+                name: "Expand selection",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Expand selection",
+                        commandId: "?",
+                        command: "Shift+Alt+\u21E8",
+                    }
+                ]
+            },
+            {
+                name: "Shrink selection",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Shrink selection",
+                        commandId: "?",
+                        command: "Shift+Alt+\u21E6",
+                    }
+                ]
+            },
+            {
+                name: "Column (box) selection",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Column (box) selection",
+                        commandId: "?",
+                        command: "Shift+Alt+(drag mouse)",
+                    }
+                ]
+            },
+            {
+                name: "Column (box) selection",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Column (box) selection",
+                        commandId: "?",
+                        command: "Ctrl+Shift+Alt+(arrow key)",
+                    }
+                ]
+            },
+            {
+                name: "Column (box) selection page up",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Column (box) selection page up",
+                        commandId: "?",
+                        command: "Ctrl+Shift+Alt+PgUp",
+                    }
+                ]
+            },
+            {
+                name: "Column (box) selection page down",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Column (box) selection page down",
+                        commandId: "?",
+                        command: "Ctrl+Shift+Alt+PgDn",
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        section: "rich-language",
+        name: "Rich Languages Editing",
+        commands: [
+            {
+                name: "Trigger suggestion",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Trigger suggestion",
+                        commandId: "?",
+                        command: "Click+Space Ctrl+I",
+                    }
+                ]
+            },
+            {
+                name: "Trigger parameter hints",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Trigger parameter hints",
+                        commandId: "?",
+                        command: "Click+Shift+Space",
+                    }
+                ]
+            },
+            {
+                name: "Format document",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Format document",
+                        commandId: "?",
+                        command: "Shift+Alt+F",
+                    }
+                ]
+            },
+            {
+                name: "Format selection",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Format selection",
+                        commandId: "?",
+                        command: "Ctrl+K Ctrl+F",
+                    }
+                ]
+            },
+            {
+                name: "Go to Definition",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Go to Definition",
+                        commandId: "?",
+                        command: "F12",
+                    }
+                ]
+            },
+            {
+                name: "Peek Definition",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Peek Definition",
+                        commandId: "?",
+                        command: "Alt+F12",
+                    }
+                ]
+            },
+            {
+                name: "Open Definition to the side",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Open Definition to the side",
+                        commandId: "?",
+                        command: "Click+K F12",
+                    }
+                ]
+            },
+            {
+                name: "Quick Fix",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Quick Fix",
+                        commandId: "?",
+                        command: "Ctrl+.",
+                    }
+                ]
+            },
+            {
+                name: "Show References",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show References",
+                        commandId: "?",
+                        command: "Shift+F12",
+                    }
+                ]
+            },
+            {
+                name: "Rename Symbol",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Rename Symbol",
+                        commandId: "?",
+                        command: "F2",
+                    }
+                ]
+            },
+            {
+                name: "Trim trailing whitespace",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Trim trailing whitespace",
+                        commandId: "?",
+                        command: "Ctrl+K Ctrl+X",
+                    }
+                ]
+            },
+            {
+                name: "Change file language",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Change file language",
+                        commandId: "?",
+                        command: "Click+K M",
                     }
                 ]
             }
@@ -732,7 +1164,7 @@ const shortcuts = [
                 ]
             }
         ]
-    },
+    }
 ];
 
 const columns = [
