@@ -1124,6 +1124,330 @@ const shortcuts = [
         ]
     },
     {
+        section: "editorManagement",
+        name: "Editor Management",
+        commands: [
+            {
+                name: "Close Editor",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Close Editor",
+                        commandId: "?",
+                        command: "Ctrl+F4 or Ctrl+W",
+                    }
+                ]
+            },
+            {
+                name: "Close folder",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Close folder",
+                        commandId: "?",
+                        command: "Ctrl+K F",
+                    }
+                ]
+            },
+            {
+                name: "Split editor",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Split editor",
+                        commandId: "?",
+                        command: "Ctrl+\\"
+                    }
+                ]
+            },
+            {
+                name: "Focus into 1st editor Group",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Focus into 1st editor Group",
+                        commandId: "?",
+                        command: "Ctrl+1"
+                    }
+                ]
+            },
+            {
+                name: "Focus into 2nd editor Group",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Focus into 2nd editor Group",
+                        commandId: "?",
+                        command: "Ctrl+2"
+                    }
+                ]
+            },
+            {
+                name: "Focus into 3rd editor Group",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Focus into 3rd editor Group",
+                        commandId: "?",
+                        command: "Ctrl+3"
+                    }
+                ]
+            },
+            {
+                name: "Focus into previous editor group",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Focus into previous editor group",
+                        commandId: "?",
+                        command: "Ctrl+K Ctrl+\u21E6"
+                    }
+                ]
+            },
+            {
+                name: "Focus into next editor group",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Focus into next editor group",
+                        commandId: "?",
+                        command: "Ctrl+K Ctrl+\u21E8"
+                    }
+                ]
+            },
+            {
+                name: "Move editor left",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Move editor left",
+                        commandId: "?",
+                        command: "Ctrl+Shift+PgUp"
+                    }
+                ]
+            },
+            {
+                name: "Move editor right",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Move editor right",
+                        commandId: "?",
+                        command: "Ctrl+Shift+PgDn"
+                    }
+                ]
+            },
+            {
+                name: "Move active editor group",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Move active editor group",
+                        commandId: "?",
+                        command: "Ctrl+K \u21E6"
+                    }
+                ]
+            },
+            {
+                name: "Move active editor group",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Move active editor group",
+                        commandId: "?",
+                        command: "Ctrl+K \u21E8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        section: "fileManagemnt",
+        name: "File Management",
+        commands: [
+            {
+                name: "New File",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "New File",
+                        commandId: "?",
+                        command: "Ctrl+N",
+                    }
+                ]
+            },
+            {
+                name: "Open File...",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Open File...",
+                        commandId: "?",
+                        command: "Ctrl+O",
+                    }
+                ]
+            },
+            {
+                name: "Save",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Save",
+                        commandId: "?",
+                        command: "Ctrl+S",
+                    }
+                ]
+            },
+            {
+                name: "Save As...",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Save As...",
+                        commandId: "?",
+                        command: "Ctrl+Shift+S",
+                    }
+                ]
+            },
+            {
+                name: "Save All",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Save All",
+                        commandId: "?",
+                        command: "Ctrl+K S",
+                    }
+                ]
+            },
+            {
+                name: "Close",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Close",
+                        commandId: "?",
+                        command: "Ctrl+F4",
+                    }
+                ]
+            },
+            {
+                name: "Close All",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Close All",
+                        commandId: "?",
+                        command: "Ctrl+K Ctrl+W",
+                    }
+                ]
+            },
+            {
+                name: "Reopen closed editor",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Reopen closed editor",
+                        commandId: "?",
+                        command: "Ctrl+Shift+T",
+                    }
+                ]
+            },
+            {
+                name: "Keep preview mode editor open",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Keep preview mode editor open",
+                        commandId: "?",
+                        command: "Ctrl+K Enter",
+                    }
+                ]
+            },
+            {
+                name: "Open next",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Open next",
+                        commandId: "?",
+                        command: "Ctrl+Tab",
+                    }
+                ]
+            },
+            {
+                name: "Open previous",
+                favorite: true,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Open previous",
+                        commandId: "?",
+                        command: "Ctrl+Shift+Tab",
+                    }
+                ]
+            },
+            {
+                name: "Copy path of active file",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Copy path of active file",
+                        commandId: "?",
+                        command: "Ctrl+K P",
+                    }
+                ]
+            },
+            {
+                name: "Reveal active file in Explorer",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Reveal active file in Explorer",
+                        commandId: "?",
+                        command: "Ctrl+K R",
+                    }
+                ]
+            },
+            {
+                name: "Show active file in new window/instance",
+                favorite: false,
+                ides: [
+                    {
+                        id: VSCODE,
+                        name: "Show active file in new window/instance",
+                        commandId: "?",
+                        command: "Ctrl+K O",
+                    }
+                ]
+            }
+        ]
+    },
+    {
         section: "refactor",
         name: "Refactor",
         commands: [
