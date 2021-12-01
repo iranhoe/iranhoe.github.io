@@ -738,33 +738,32 @@ const shortcuts = [
 const columns = [
     {
         name: "Name of the IDE/Edit",
-        class: "name-ide",
+        class: "name",
         column: "name",
         shotName: "name"
     },
     {
         name: "Command Id of the IDE/Edit",
-        class: "com-ide",
+        class: "com",
         column: "commandId",
         shotName: "command id"
     },
     {
         name: "Keys of the IDE/Edit",
-        class: "keys-ide",
+        class: "keys",
         column: "command",
         shotName: "keys"
     }
 ]
 
 const IDEs = [
-    { name: "visual studio 2022", class:"vs2022", id: VS2022 },
-    { name: "visual studio code", class:"vscode", id: VSCODE }
+    { name: "visual studio 2022", id: VS2022 },
+    { name: "visual studio code", id: VSCODE }
 ];
 
 
 getClassName = (column, ide) => {
-    const name =  column.class + "-" + ide.class;
-    console.log(name);
+    const name =  column.class + "-ide-" + ide.id;
     return name;
 }
 
@@ -789,22 +788,22 @@ getClassName = (column, ide) => {
     }
 
     createRowForHeader = () => {
-        const tableHead = document.createElement('thead');
+        const thead = document.createElement('thead');
         const tr = document.createElement('tr');
-        tableHead.appendChild(tr);
-        addDataToRow(tableHead, null, "th", (ide)=> ide.name);
-        return tableHead;
+        thead.appendChild(tr);
+        addDataToRow(thead, null, "th", (ide)=> ide.name);
+        return thead;
 
     }
 
     createRowPerCommands = (commands) => {
-        const tableBody = document.createElement('tbody');
+        const tbody = document.createElement('tbody');
         for (let i = 0; i < commands.length; i++) {
             const tr = document.createElement('tr');
-            tableBody.appendChild(tr);
+            tbody.appendChild(tr);
             addDataToRow(tr, commands[i], "td", getBodyCellText);
         }
-        return tableBody;
+        return tbody;
     }
 
     getBodyCellText = (ide, column, command) => {
@@ -839,7 +838,7 @@ getClassName = (column, ide) => {
 (function() {
     switchDisplay = (className, visible) => { 
         document.querySelectorAll("."+ className) .forEach((item) => {
-            item.style.display = visible ? "none" : "table-cell";
+            item.style.display = visible ? "table-cell" : "none";
         });
     }  
 
@@ -883,6 +882,7 @@ getClassName = (column, ide) => {
     createInputCheckbox = (className) => {
         const input = document.createElement('input');
         input.setAttribute('type', 'checkbox');
+        input.setAttribute('checked', 'checked');
         input.addEventListener('click', (e, i) => {
             switchDisplay(className, input.checked)
         });
