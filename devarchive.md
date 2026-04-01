@@ -1,5 +1,5 @@
 ---
-layout: devarchive
+layout: page
 tagline: Archivo Artículos de tecnología
 title: Dev Blog
 permalink: /devarchive.html

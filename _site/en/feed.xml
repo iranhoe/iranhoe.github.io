@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://blog.homeserver.com/en/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.homeserver.com/en/" rel="alternate" type="text/html" hreflang="es" /><updated>2026-04-01T04:12:51+00:00</updated><id>https://blog.homeserver.com/feed.xml</id><title type="html">Iranhoe</title><subtitle>Página de tecnología y blog</subtitle><author><name>iranhoe</name></author><entry xml:lang="en"><title type="html">Interview questions I ask</title><link href="https://blog.homeserver.com/en/devblog/2020/10/26/interview-questions-en.html" rel="alternate" type="text/html" title="Interview questions I ask" /><published>2020-10-26T00:00:00+00:00</published><updated>2026-04-01T01:42:35+00:00</updated><id>https://blog.homeserver.com/devblog/2020/10/26/interview-questions-en</id><content type="html" xml:base="https://blog.homeserver.com/devblog/2020/10/26/interview-questions-en.html"><![CDATA[<h2 id="these-are-the-topics-i-ask-about">These are the topics I ask about</h2>
+
+<p><em>Thanks to Mel and Walter for their contributions, answering questions, complementing, suggestions for the page, and correcting typos.</em></p>
+
+<blockquote>
+  <p>NOTE: Not knowing something LVL 1 is worse than not knowing something LVL 5, this is very subjective.<br />
+Example: failing 1/10 LVL 1 OOP questions is not bad; failing 9/10 while only answering LVL 5 can be interpreted as having only researched quick terms without foundations.</p>
+</blockquote>
+
+<blockquote>
+  <p>NOTE: I’m adding a column for English. My intention is to help people who are not yet fluent in English. On the other hand, I think it would also help to see the difference between explaining a topic in Spanish and English.</p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#these-are-the-topics-i-ask-about" id="markdown-toc-these-are-the-topics-i-ask-about">These are the topics I ask about</a></li>
+</ul>
+
+<p>The questions are in English because it is normal to interview in English.
+In some updates, I will change that to both Spanish and English.</p>
+
+<div id="questions-container"></div>]]></content><author><name>iranhoe</name></author><category term="devblog" /><summary type="html"><![CDATA[These are the topics I ask about]]></summary></entry><entry xml:lang="es"><title type="html">Preguntas que hago para entrevistas</title><link href="https://blog.homeserver.com/en/devblog/2020/10/26/interview-questions.html" rel="alternate" type="text/html" title="Preguntas que hago para entrevistas" /><published>2020-10-26T00:00:00+00:00</published><updated>2026-04-01T01:42:35+00:00</updated><id>https://blog.homeserver.com/devblog/2020/10/26/interview-questions</id><content type="html" xml:base="https://blog.homeserver.com/devblog/2020/10/26/interview-questions.html"><![CDATA[<h2 id="estos-son-los-temas-que-pregunto">Estos son los temas que pregunto</h2>
+
+<p><em>Gracias a Mel y a Walter por sus aportaciones, responder preguntas, complementar, sugerencias para la pagina y corregir typos</em></p>
+
+<blockquote>
+  <p>NOTA: No saber algo LVL 1 es mas malo que no saber algo de LVL 5, esto es muy a criterio.<br />
+Ejemplo fallar 1/10 preguntas de LVL 1 de OOP no es malo, Fallar 9/10  ya responder solo de LVL 5 puede interpretarse como que solo se busco términos rapidos sin fundamentos.</p>
+</blockquote>
+
+<blockquote>
+  <p>NOTA: Agrego una columna para ingles, Mi intención es ayudar a la gente que aun no domina el ingles. Por otra parte creo que también ayudaría ver la diferencia de explicar un tópico en español e ingles.</p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#estos-son-los-temas-que-pregunto" id="markdown-toc-estos-son-los-temas-que-pregunto">Estos son los temas que pregunto</a></li>
+</ul>
+
+<p>Las preguntas estan en ingles porque lo normal es entrevistar en ingles
+en alguna actualizacion cambiare eso a español e ingles.</p>
+
+<div id="questions-container"></div>]]></content><author><name>iranhoe</name></author><category term="devblog" /><summary type="html"><![CDATA[Estos son los temas que pregunto]]></summary></entry><entry xml:lang="es"><title type="html">Bases de datos en la nube</title><link href="https://blog.homeserver.com/en/devblog/2020/05/27/databases.html" rel="alternate" type="text/html" title="Bases de datos en la nube" /><published>2020-05-27T00:00:00+00:00</published><updated>2026-03-31T16:48:43+00:00</updated><id>https://blog.homeserver.com/devblog/2020/05/27/databases</id><content type="html" xml:base="https://blog.homeserver.com/devblog/2020/05/27/databases.html"><![CDATA[<h1 id="sql-y-nosql">SQL y NoSQL</h1>
+
+<h2 id="document-nosql-database">Document (NoSQL) Database</h2>
+
+<blockquote>
+  <p>Pagos mensuales</p>
+</blockquote>
+
+<h3 id="mongo">Mongo</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Plataforma</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">Tamaño</th>
+      <th style="text-align: center">Precio</th>
+      <th style="text-align: center">Backup</th>
+      <th style="text-align: center">vCPU</th>
+      <th style="text-align: center">RAM GB</th>
+      <th style="text-align: center">Plan</th>
+      <th style="text-align: center">Servidor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Mongo Atlas</td>
+      <td style="text-align: center">MongoDb</td>
+      <td style="text-align: center">512 MB</td>
+      <td style="text-align: center">Gratis</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">Shared</td>
+      <td style="text-align: center">Shared</td>
+      <td style="text-align: center">M0</td>
+      <td style="text-align: center">AWS, N. Virginia (us-east-1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Mongo Atlas</td>
+      <td style="text-align: center">MongoDb</td>
+      <td style="text-align: center">5 GB</td>
+      <td style="text-align: center">25.00 USD</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">Shared</td>
+      <td style="text-align: center">Shared</td>
+      <td style="text-align: center">M5</td>
+      <td style="text-align: center">AWS, N. Virginia (us-east-1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Mongo Atlas</td>
+      <td style="text-align: center">MongoDb</td>
+      <td style="text-align: center">10 GB</td>
+      <td style="text-align: center">~59.52 USD</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">M10</td>
+      <td style="text-align: center">AWS, N. Virginia (us-east-1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Mongo Atlas</td>
+      <td style="text-align: center">MongoDb</td>
+      <td style="text-align: center">100 GB</td>
+      <td style="text-align: center">~96.72 USD</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">M10</td>
+      <td style="text-align: center">AWS, N. Virginia (us-east-1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Mongo Atlas</td>
+      <td style="text-align: center">MongoDb</td>
+      <td style="text-align: center">100 GB</td>
+      <td style="text-align: center">~193.44 USD</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">M20</td>
+      <td style="text-align: center">AWS, N. Virginia (us-east-1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS</td>
+      <td style="text-align: center">MongoDb</td>
+      <td style="text-align: center">5 GB</td>
+      <td style="text-align: center">202.21 USD</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">db r4.large*</td>
+      <td style="text-align: center">US East (N. virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS</td>
+      <td style="text-align: center">MongoDb</td>
+      <td style="text-align: center">100 GB</td>
+      <td style="text-align: center">212.71 USD</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">db r4.large*</td>
+      <td style="text-align: center">US East (N. virginia)</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>* “large” son planes caros en cualquier tipo de instancia, pero es la mas económica disponible</p>
+</blockquote>
+
+<blockquote>
+  <p>test</p>
+</blockquote>
+
+<h3 id="firestore-en-gcp">FireStore en GCP</h3>
+
+<p>La calculadora de firebase y GPC dicen una cantidad diferente de lecturas y escrituras gratis <br />
+GPC da 50k gratis de lectura 20k de escritura.</p>
+
+<p>Datos por la pagina de <a href="https://firebase.google.com/pricing/#blaze-calculator">firebase</a>
+Escritura: $0.18/100k
+Lectura:   $0.06/100k
+Eliminar:  $0.02/100k
+Plan: Pay as you Go</p>
+
+<p>Para Generar una cantidad de costo en 2 Millones de Lectura/Escritura/Eliminación sobre la cantidad ya gratuita de GCP se utilizaron los siguientes valores en <a href="https://cloud.google.com/products/calculator/#id=f7b13910-d594-4601-9be2-70771e12c0d1">GPC</a></p>
+
+<ul>
+  <li>Lectura: 115,754 por dia</li>
+  <li>Escritura: 85,754 por dia</li>
+  <li>Eliminación: 85,754 por dia</li>
+  <li>Servidor: US (multi-regional) (us)</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Tamaño</th>
+      <th style="text-align: center">Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1 GB</td>
+      <td style="text-align: center">Gratis*</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1 GB</td>
+      <td style="text-align: center">5.20 USD</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2 GB</td>
+      <td style="text-align: center">5.38 USD</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5 GB</td>
+      <td style="text-align: center">5.92 USD</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">100 GB</td>
+      <td style="text-align: center">23.02 USD</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>Los precios no incluyen en <a href="https://cloud.google.com/compute/pricing#network">Egress</a> <br />
+* sin pasar la cuota de transferencia</p>
+</blockquote>
+
+<h3 id="firebase">Firebase</h3>
+
+<p>Firebase no se encuentra dentro de GCP, esta en su propia plataforma https://firebase.google.com/</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Cantidad</th>
+      <th style="text-align: center">Tipo</th>
+      <th style="text-align: right">Precio/M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">100 GB</td>
+      <td style="text-align: center">Transferencia</td>
+      <td style="text-align: right">$  90 USD</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">10 GB</td>
+      <td style="text-align: center">Almacenamiento</td>
+      <td style="text-align: right">$  45 USD</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">10 GB</td>
+      <td style="text-align: center">Transferencia</td>
+      <td style="text-align: right">Gratis</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">1 GB</td>
+      <td style="text-align: center">Almacenamiento</td>
+      <td style="text-align: right">$  45 USD</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="otros">Otros</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Plataforma</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">Tamaño</th>
+      <th style="text-align: center">Precio</th>
+      <th style="text-align: center">Escritura</th>
+      <th style="text-align: center">Lectura</th>
+      <th style="text-align: center">Backup</th>
+      <th style="text-align: center">vCPU</th>
+      <th style="text-align: center">RAM GB</th>
+      <th style="text-align: center">Plan</th>
+      <th style="text-align: center">Servidor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">AWS</td>
+      <td style="text-align: center">DynamoDB*</td>
+      <td style="text-align: center">25 GB</td>
+      <td style="text-align: center">Gratis</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">Free Tier</td>
+      <td style="text-align: center">US East (N. virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS</td>
+      <td style="text-align: center">DynamoDB*</td>
+      <td style="text-align: center">5 GB</td>
+      <td style="text-align: center">~27.50 USD</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">US East (N. virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS</td>
+      <td style="text-align: center">DynamoDB*</td>
+      <td style="text-align: center">10 GB</td>
+      <td style="text-align: center">~28.00 USD</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">YES</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">US East (N. virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP</td>
+      <td style="text-align: center">BigTable**</td>
+      <td style="text-align: center">5 GB</td>
+      <td style="text-align: center">1,423.63 USD</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Azure</td>
+      <td style="text-align: center">Cosmo Db</td>
+      <td style="text-align: center">5 GB</td>
+      <td style="text-align: center">Gratis</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">$0.??/100k</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">??</td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>DynamoDB FREE TIER: Each month, Amazon DynamoDB users pay no charges on the first 25GB of storage, the first 2.5 million DynamoDB Streams read request units, as well as 25 write capacity unit and 25 read capacity units of provisioned capacity. Free tier also provides 25 replicated write capacity units to deploy DynamoDB Global Tables in up to 2 AWS regions. \</p>
+
+  <p>* Documentos alrededor de 5kb con Ond-Demand con 2 millones de lecturas y transacciones al mes. <br />
+** Big Table es recomendada para tamaños de 1TB</p>
+</blockquote>
+
+<h2 id="data-sql">Data SQL</h2>
+
+<blockquote>
+  <p>Solo una instancia con recursos compartidos, SSD General Purpose, pagos mensuales.</p>
+
+  <p>HPC = Enable High Performance Configuration</p>
+</blockquote>
+
+<h3 id="sql-server">SQL Server</h3>
+
+<blockquote>
+  <p>GCP use version 2017</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Plataforma</th>
+      <th style="text-align: center">Tamaño</th>
+      <th style="text-align: center">SSD precio</th>
+      <th style="text-align: center">Backup</th>
+      <th style="text-align: center">vCPU</th>
+      <th style="text-align: center">CPU/h</th>
+      <th style="text-align: center">RAM GB</th>
+      <th style="text-align: left">Plan</th>
+      <th style="text-align: left">Servidor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$  18.44 USD</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+      <td style="text-align: left">US East (N. Virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$  22.34 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+      <td style="text-align: left">US East (N. Virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$  21.88 USD</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+      <td style="text-align: left">US East (N. Virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$  26.64 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+      <td style="text-align: left">US East (N. Virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP SQL</td>
+      <td style="text-align: center">10 GB</td>
+      <td style="text-align: center">$   4.02 USD</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">N/A</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP SQL</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$   7.32 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">N/A</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP SQL</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$  13.03 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">HPC</td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">N/A</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP SQL</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$  25.63 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">HPC</td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">N/A</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Azure</td>
+      <td style="text-align: center">2 GB</td>
+      <td style="text-align: center">$  96.33 MXN</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">5 DTUs</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: left">N/A</td>
+      <td style="text-align: left">East US</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Azure</td>
+      <td style="text-align: center">250 GB</td>
+      <td style="text-align: center">$  96.33 MXN</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">10 DTUs</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: left">N/A</td>
+      <td style="text-align: left">East US</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Azure</td>
+      <td style="text-align: center">1 GB</td>
+      <td style="text-align: center">$   2.89 MXN</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">General Purpose</td>
+      <td style="text-align: left">East US</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Azure</td>
+      <td style="text-align: center">10 GB</td>
+      <td style="text-align: center">$  28.85 MXN</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">General Purpose</td>
+      <td style="text-align: left">East US</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Azure</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$  57.71 MXN</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">General Purpose</td>
+      <td style="text-align: left">East US</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Azure</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$ 144.27 MXN</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">General Purpose</td>
+      <td style="text-align: left">East US</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="mysql">MySQL</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Plataforma</th>
+      <th style="text-align: center">Tamaño</th>
+      <th style="text-align: center">SSD precio</th>
+      <th style="text-align: center">Backup</th>
+      <th style="text-align: center">vCPU</th>
+      <th style="text-align: center">CPU/h</th>
+      <th style="text-align: center">RAM GB</th>
+      <th style="text-align: left">Plan</th>
+      <th style="text-align: left">Servidor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$  14.78 USD</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+      <td style="text-align: left">US East (N. Virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$  16.68 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+      <td style="text-align: left">US East (N. Virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$  18.23 USD</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+      <td style="text-align: left">US East (N. Virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$  22.98 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+      <td style="text-align: left">US East (N. Virginia)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP SQL</td>
+      <td style="text-align: center">10 GB</td>
+      <td style="text-align: center">$   2.06 USD</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">db-f1-micro</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP SQL</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$   5.36 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">db-f1-micro</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP SQL</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$   9.12 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">HPC</td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">db-f1-micro</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GCP SQL</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$  21.72 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">HPC</td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">db-f1-micro</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">000webhost.com</td>
+      <td style="text-align: center">? GB</td>
+      <td style="text-align: center">Gratis</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">HPC</td>
+      <td style="text-align: center">3.75</td>
+      <td style="text-align: left">db-f1-micro</td>
+      <td style="text-align: left">lowa (us-central1)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="postgresql">PostgreSQL</h3>
+
+<p>Servidor: US East (N. Virginia)</p>
+
+<blockquote>
+  <p>GCP PostgresSQL tiene el mismo precio que MySQL</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Plataforma</th>
+      <th style="text-align: center">Tamaño</th>
+      <th style="text-align: center">SSD Precio</th>
+      <th style="text-align: center">Backup</th>
+      <th style="text-align: center">vCPU</th>
+      <th style="text-align: center">CPU/h</th>
+      <th style="text-align: center">RAM GB</th>
+      <th style="text-align: left">Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$  15.51 USD</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">20 GB</td>
+      <td style="text-align: center">$  17.41 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$  18.96 USD</td>
+      <td style="text-align: center">NO</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AWS RDS</td>
+      <td style="text-align: center">50 GB</td>
+      <td style="text-align: center">$  23.71 USD</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6/3.3 GHz</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">db.t2.micro</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">elephantsql.com</td>
+      <td style="text-align: center">20 MB</td>
+      <td style="text-align: center">Gratis</td>
+      <td style="text-align: center">SI</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: center">?</td>
+      <td style="text-align: left">Gratis</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="mariadb-y-oracle">MariaDB y Oracle</h3>
+
+<blockquote>
+  <p>AWS Oracle y MariaDB tienen el mismo precio que MySQL</p>
+</blockquote>
+
+<h3 id="otras-por-ver">Otras por ver</h3>
+
+<ul>
+  <li>Spanner</li>
+</ul>]]></content><author><name>iranhoe</name></author><category term="devblog" /><summary type="html"><![CDATA[SQL y NoSQL]]></summary></entry></feed>

@@ -1,0 +1,2374 @@
+{
+  "OOP": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------------------",
+        "en": "-------------------------------------"
+      },
+      "hint": {
+        "es": "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+        "en": "-----------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "2",
+      "company": "HE",
+      "question": {
+        "es": "Pilares de la POO",
+        "en": "Pillar of OOP"
+      },
+      "hint": {
+        "es": "Herencia, Polimorfismo, Encapsulación, Abstracción.",
+        "en": "Inheritance, Polymorphism, Encapsulation, Abstraction"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "HE",
+      "question": {
+        "es": "Herencia",
+        "en": "Inheritance"
+      },
+      "hint": {
+        "es": "",
+        "en": "Ability to create new abstractions based on existing abstractions (classes) by deriving the existing behavior we can re-use, extend or modify the base class."
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "HE",
+      "question": {
+        "es": "Polimorfismo",
+        "en": "Polymorphism"
+      },
+      "hint": {
+        "es": "",
+        "en": "Is the property in a programming language that allows objects of different types to be substituted for one another in program flow without needing to know ahead of time what the object's type."
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "HE",
+      "question": {
+        "es": "Encapsulación",
+        "en": "Encapsulation"
+      },
+      "hint": {
+        "es": "",
+        "en": "Protective encasement that permits access to an object's data only via specifically assigned operations."
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "HE",
+      "question": {
+        "es": "Abstracción",
+        "en": "Abstraction"
+      },
+      "hint": {
+        "es": "",
+        "en": "Showing only the essential attributes of something and hiding any implementation information that is unnecessary to the user"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "E",
+      "question": {
+        "es": "Ejemplo de Herencia",
+        "en": "Examples of Inheritance"
+      },
+      "hint": {
+        "es": "",
+        "en": "A subclass extending a superclass"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "HE",
+      "question": {
+        "es": "Ejemplo de Polimorfismo",
+        "en": "Examples of Polymorphism"
+      },
+      "hint": {
+        "es": "Override y overloading son parte del polimorfismo, upcasting y downcasting también",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "E",
+      "question": {
+        "es": "Ejemplo de Encapsulación",
+        "en": "Examples of Encapsulation"
+      },
+      "hint": {
+        "es": "",
+        "en": "private fields, props (getter and setters), encapsulate what varies principle"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "E",
+      "question": {
+        "es": "Ejemplo de Abstracción",
+        "en": "Examples of Abstraction"
+      },
+      "hint": {
+        "es": "",
+        "en": "Create private methods to hide implementation details, abstract out functions and methods that are common across multiple instances and create a single generalized concept"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "H",
+      "question": {
+        "es": "Abstract vs interface",
+        "en": "Abstract vs interface"
+      },
+      "hint": {
+        "es": "",
+        "en": "Abstract is used for the inherit chain, Interface defines a contract that must be implemented, abstract classes can have base implementation, interfaces usually only have props and methods definition (C# 8.0 allows interface default methods implementations)"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "HLUE",
+      "question": {
+        "es": "Modificadores de acceso",
+        "en": "Access modifiers"
+      },
+      "hint": {
+        "es": "",
+        "en": "**public**: type or member can be accessed from anywhere <br /> **private**: type or member can be only accessed within the same class <br /> **protected**: type or member can be accessed within the same class or a deriving class <br /> **internal**: type or member can be accessed anywhere in the declaring assembly <br /> **private protected**: can be accessed only in the declaring assembly by code in the same class or a derived one <br /> **protected internal**: can be accessed only in declaring assembly, or by a deriving class in another assembly."
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "E",
+      "question": {
+        "es": "Herencia múltiple",
+        "en": "Multi inheritance"
+      },
+      "hint": {
+        "es": "",
+        "en": "C# does not allow multiple inheritance through classes, we must implement multiple interfaces, see [deadly diamond of death problem](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem)"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "HUE",
+      "question": {
+        "es": "sobre-escritura",
+        "en": "override"
+      },
+      "hint": {
+        "es": "",
+        "en": "Declare a **virtual** method in a base class, then use **override** modifier in child class method, that way we modifiy the existing behavior (polymorphism)"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "HUE",
+      "question": {
+        "es": "sobrecarga",
+        "en": "overloading"
+      },
+      "hint": {
+        "es": "",
+        "en": "Declare several methods with almost same signature except for parameters number or type"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "HE",
+      "question": {
+        "es": "protect/private vs internal",
+        "en": "protect/private vs internal"
+      },
+      "hint": {
+        "es": "ver modificadores de acceso",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "struct",
+        "en": "struct"
+      },
+      "hint": {
+        "es": "",
+        "en": "Value type akin to a class where you can encapsulate data and related functionality"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "HE",
+      "question": {
+        "es": "Reference Type",
+        "en": "Reference Type"
+      },
+      "hint": {
+        "es": "- Donde se guardan los objetos <br /> - Referencia de memoria <br > - Se almacena en el heap",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "HE",
+      "question": {
+        "es": "Value Type",
+        "en": "Value Type"
+      },
+      "hint": {
+        "es": "- Se libera automaticamente <br /> - vive en el Stack",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Managed and Unmanaged Code",
+        "en": "Managed and Unmanaged Code"
+      },
+      "hint": {
+        "es": "",
+        "en": "Managed: compiler - unmanaged: os"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Memory",
+        "en": "Memory"
+      },
+      "hint": {
+        "es": "Heap & Stack, los dos se almacenan en la memoria RAM, son un concepto lógico.",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Memory: Heap",
+        "en": "Memory: Heap"
+      },
+      "hint": {
+        "es": "- Se libera manual: Se aloja con el new y se libera con el delete. <br /> - Es mas lento <br> Memoria en la que residen los objetos. Tipo por referencia",
+        "en": "It is the memory in which objects reside. Reference Types"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Memory: Stack",
+        "en": "Memory: Stack"
+      },
+      "hint": {
+        "es": "- Se libera automáticamente. <br /> - Es mas rapida <br /> - Se utiliza para almacenar valores, no punteros. <br /> Stack es un bloque de memoria para almacenar variables locales y parametros. Memoria de la computadora, Memoria Temporal",
+        "en": "Stack is a block of memory for storing local variables and parameters. Computer's Memory, Temprary Storage Memory"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Static class",
+        "en": "Static class"
+      },
+      "hint": {
+        "es": "",
+        "en": "Signature modifier that indicates all members should be static, that is, you don't need to create an instance of the class to reference that member"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "E",
+      "question": {
+        "es": "Donde se guarda el tipo Valor",
+        "en": "Where the **Value Type** is stored"
+      },
+      "hint": {
+        "es": "Se guardan en el stack",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "E",
+      "question": {
+        "es": "Donde se guarda el tipo de Ref",
+        "en": "Where the **Ref Type** is stored"
+      },
+      "hint": {
+        "es": "SE guardan en el Heap",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "E",
+      "question": {
+        "es": "Boxing",
+        "en": "Boxing"
+      },
+      "hint": {
+        "es": "Boxing es el acto de hacer cas a un **value type** aun **reference type**, puede *reference type* puede ser un objecto clase o una interfaz. <br /> Ejemplo C#: <br /> ``` int = 123; ``` <br /> ``` object o = i; \\\\ boxing ```",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "E",
+      "question": {
+        "es": "Unboxing",
+        "en": "Unboxing"
+      },
+      "hint": {
+        "es": "``` 0 = 123; ``` <br /> ``` i = (int)o;  \\\\ unboxing```",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "L",
+      "question": {
+        "es": "Constructor Clases abstractas",
+        "en": "Abstract class constructor"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "",
+      "question": {
+        "es": "Downcasting (polymorphism)",
+        "en": "Downcasting"
+      },
+      "hint": {
+        "es": "Utilizar una referencia upcasteada previamente y regresarla a su tipo original  *Operacion costosa en tiempo de ejecucion, ejemplo: <br />```void FeedAnimal(Animal animal){``` <br />``` if(animal is Dog){ ``` <br />```  Dog dog = animal as Dog; ``` <br />``` } ```",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "",
+      "question": {
+        "es": "Covariance and contravariance",
+        "en": "Covariance and contravariance"
+      },
+      "hint": {
+        "es": "",
+        "en": "Enable implicit reference conversion for array types, delegate types, and generic tpye arguments:<br />```Ienumerable<string> strings = new List<string>();```<br />```Ienumerable<object> objects = strings;```<br /><br />Contravariance:<br />```Action<object> actObject = SetObject;```<br />```Action<string> actString = actObject;```"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    }
+  ],
+  ".Net (C#)": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------------------",
+        "en": "-----------------------------------------"
+      },
+      "hint": {
+        "es": "----------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+        "en": "-----------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "5",
+      "company": "HL",
+      "question": {
+        "es": "CLR",
+        "en": "CLR"
+      },
+      "hint": {
+        "es": "Common Language Runtime: Improves runtime interactivity between programs, portability, security, cross-language integration",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "L",
+      "question": {
+        "es": "MSIL/CIL",
+        "en": "MSIL/CIL"
+      },
+      "hint": {
+        "es": "Microsoft Intermediate Language / Common Intermediate Language",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "L",
+      "question": {
+        "es": "CLI",
+        "en": ".Net Framework/.Net Core"
+      },
+      "hint": {
+        "es": "Common Language Infrastructure",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "HLU",
+      "question": {
+        "es": ".Net Framework/.Net Core",
+        "en": ".Net Framework/.Net Core"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "HLE",
+      "question": {
+        "es": "Thread & Task",
+        "en": "Thread & Task"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "E",
+      "question": {
+        "es": "Programación Asíncrona",
+        "en": "Programación Asíncrona"
+      },
+      "hint": {
+        "es": "async, await, task",
+        "en": "async, await, task"
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "HLE",
+      "question": {
+        "es": "Delegate",
+        "en": "Delegate"
+      },
+      "hint": {
+        "es": "action & func",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "",
+      "company": "E",
+      "question": {
+        "es": "Tipo de Delegados",
+        "en": "Tipo de Delegados"
+      },
+      "hint": {
+        "es": "Tipo (Type) e Instancia (instance)",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "E",
+      "question": {
+        "es": "Delegado de tipo (delegate Type)",
+        "en": "Delegado de tipo (delegate Type)"
+      },
+      "hint": {
+        "es": "Un *delegate type* define un *protocolo* el cual el que lo llama y el objetivo van a confirmar, comprometiendo una lista de tipo de parámetros y un tipo de retorno",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "E",
+      "question": {
+        "es": "Delegado de instancia (delegate instance)",
+        "en": "Delegado de instancia (delegate instance)"
+      },
+      "hint": {
+        "es": "Un *delegate instance* es un tipo de objeto que se referencia a uno o mas métodos objetivos conformando un protocolo.",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Action (delegate)",
+        "en": "Action (delegate)"
+      },
+      "hint": {
+        "es": "functions that do not return a value",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "E",
+      "question": {
+        "es": "Func (delegate)",
+        "en": "Func (delegate)"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "",
+      "question": {
+        "es": "Predicate",
+        "en": "Predicate"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Extension method",
+        "en": "Extension method"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Linq",
+        "en": "Linq"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Lamba Expression",
+        "en": "Lamba Expression"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "",
+      "question": {
+        "es": "Dispose Finalize (IDisposable)",
+        "en": "Dispose Finalize (IDisposable)"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "",
+      "question": {
+        "es": "GC",
+        "en": "GC"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "",
+      "question": {
+        "es": "Generations",
+        "en": "Generations"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "",
+      "question": {
+        "es": "Generics",
+        "en": "Generics"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "",
+      "question": {
+        "es": "Tuples",
+        "en": "Tuples"
+      },
+      "hint": {
+        "es": "",
+        "en": "Provide a simple way to store a set of values. The main purpose of tuples is to safely return multiple values from a method without resorting to **out** parameters (something you cannot do with anonymous types)"
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "",
+      "question": {
+        "es": "Unsafe code",
+        "en": "Unsafe code"
+      },
+      "hint": {
+        "es": "",
+        "en": "Permitted to use pointer types and perform C++ style pointer operations on memory within that scope"
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "",
+      "question": {
+        "es": "GC memory work",
+        "en": "GC memory work"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "E",
+      "question": {
+        "es": "Caules IoC utilizas",
+        "en": "Caules IoC utilizas"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "UE",
+      "question": {
+        "es": "Tipos de LifeTime en .Net Core IoC",
+        "en": "Tipos de LifeTime en .Net Core IoC"
+      },
+      "hint": {
+        "es": "AddSingleton, Transaction, AddScope",
+        "en": "AddSingleton, Transaction, AddScope"
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "E",
+      "question": {
+        "es": "Generic con contrains",
+        "en": "Generic con contrains"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "E",
+      "question": {
+        "es": "Reflection",
+        "en": "Reflection"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "LUES",
+      "question": {
+        "es": "Usos de reflection",
+        "en": "Example of usage of Reflection"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "E",
+      "question": {
+        "es": "Modificador de acceso por default",
+        "en": "Modificador de acceso por default"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "LE",
+      "question": {
+        "es": "Librerias de IoC",
+        "en": "Librerias de IoC"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "S",
+      "question": {
+        "es": "Data Types",
+        "en": "Data Types"
+      },
+      "hint": {
+        "es": "int, long, double, decimal, float, char, string, bool, byte, object, sbyte, short, uint, ulong, ushort",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "S",
+      "question": {
+        "es": "Data Structure",
+        "en": "Data Structure"
+      },
+      "hint": {
+        "es": "Collecciones son el estandar que complementan los arrays, fuera de las arreglos, no cuenta con estructura de datos como otros lenguages que tienen tipo de estructuras de key-value. C# include un tipo comun de estructura que ayude a crear colecciones (System.Collection)",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "S",
+      "question": {
+        "es": "Flow Control",
+        "en": "Flow Control"
+      },
+      "hint": {
+        "es": "if-else-, while, do-while, switch, for, foreach",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------------------------",
+        "en": "-----------------------------------------------"
+      },
+      "hint": {
+        "es": "-----------------------------------------------------------------------------------------------",
+        "en": "-----------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "4",
+      "company": "L",
+      "question": {
+        "es": "Kestrel",
+        "en": "Kestrel"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "ULE",
+      "question": {
+        "es": "Startup",
+        "en": "Startup"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "L",
+      "question": {
+        "es": "Como se configura (diferencia con .Net framework)",
+        "en": "How to configure (and diff with .Net framework"
+      },
+      "hint": {
+        "es": "Principla: Multiplataforma",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------------------------",
+        "en": "-----------------------------------------------"
+      },
+      "hint": {
+        "es": "-----------------------------------------------------------------------------------------------",
+        "en": "-----------"
+      },
+      "area": []
+    },
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-----------------",
+        "en": "-----------------"
+      },
+      "hint": {
+        "es": "------------------------------",
+        "en": "------------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "+5",
+      "company": "",
+      "question": {
+        "es": "Integer literals",
+        "en": "Integer literals"
+      },
+      "hint": {
+        "es": "decimal, hexadecimal, binary",
+        "en": "decimal, hexadecimal, binary"
+      },
+      "area": [
+        "Backend"
+      ]
+    }
+  ],
+  "ASP.NET MVC": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------",
+        "en": "-----------------------------"
+      },
+      "hint": {
+        "es": "-----------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "x",
+      "company": "H",
+      "question": {
+        "es": "Workflow",
+        "en": "Workflow"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "Security",
+        "en": "Security"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "Filters",
+        "en": "Filters"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "Filters - Order",
+        "en": "Filters - Order"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "Filters - Types",
+        "en": "Filters - Types"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "Multiple Models",
+        "en": "Multiple Models"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "Route (Core and Framework)",
+        "en": "Route (Core and Framework)"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "HttpVerbs",
+        "en": "HttpVerbs"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "RestAPI",
+        "en": "RestAPI"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "Assign Model",
+        "en": "Assign Model"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "Partial view",
+        "en": "artial view"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "H",
+      "question": {
+        "es": "ViewBag ViewData TempData",
+        "en": "ViewBag ViewData TempData"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    }
+  ],
+  "SOLID": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-----------------------------------------------",
+        "en": "---------------------------------------------"
+      },
+      "hint": {
+        "es": "-------------------------------------------------------------------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Single responsibility Principle",
+        "en": "Single responsibility Principle"
+      },
+      "hint": {
+        "es": "",
+        "en": "Gather toghter the things that change for the same reasons, Separete things that Change for different reason <br /> Tambien se puede decir que un object tiene una sola razon para cambiar"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Open–Closed Principle",
+        "en": "Open–Closed Principle"
+      },
+      "hint": {
+        "es": "",
+        "en": "A Module should be open for extension but closed for modification"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "HL",
+      "question": {
+        "es": "Liskov Substitution Principle",
+        "en": "Liskov Substitution Principle"
+      },
+      "hint": {
+        "es": "",
+        "en": "A program that uses an interface must no be confused by an implmentation of that interface <br /> Objectos de un programa deberian ser reemplazabes por instances de sus subtipos sin alterar el correcto funcionamiento del programa"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "HL",
+      "question": {
+        "es": "Interface Segregation Principle",
+        "en": "Interface Segregation Principle"
+      },
+      "hint": {
+        "es": "",
+        "en": "Keep interfaces small so that users don't end up depending on things they don't need <br /> Muchas interfaces cliente espeficicas son mejores que una interfaz de propósito general"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Dependency Inversion Principle",
+        "en": "Dependency Inversion Principle"
+      },
+      "hint": {
+        "es": "",
+        "en": "Depend in the direction of abstraction. High level modules should not depend upon low level details <br /> La noción de que se debe \"depender de abstracciones, no depender de implementaciones\"."
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "E",
+      "question": {
+        "es": "Caules OOP aplican a S",
+        "en": "Which OOP can apply to S"
+      },
+      "hint": {
+        "es": "No decir que solo tiene una responsabilidad <br /> se puede explicar mejor diciendo que solo tiene una razon para cambiar",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "E",
+      "question": {
+        "es": "Caules OOP aplican a O",
+        "en": "Which OOP can apply to O"
+      },
+      "hint": {
+        "es": "Creo que con el Polimorfismo",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "E",
+      "question": {
+        "es": "Caules OOP aplican a L",
+        "en": "Which OOP can apply to L"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "E",
+      "question": {
+        "es": "Caules OOP aplican a I",
+        "en": "Which OOP can apply to I"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "E",
+      "question": {
+        "es": "Caules OOP aplican a D",
+        "en": "Which OOP can apply to D"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "4",
+      "company": "L",
+      "question": {
+        "es": "Explica para que es el SOLID - no las nombres",
+        "en": "Explain SOLID benefit, no conceps and name"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "L",
+      "question": {
+        "es": "Diferencia con Patrones de Diseño",
+        "en": "Difference with Design Patters"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    }
+  ],
+  "Design Patterns": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------",
+        "en": "---------------------"
+      },
+      "hint": {
+        "es": "--------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "X",
+      "company": "HLE",
+      "question": {
+        "es": "IoC",
+        "en": "IoC"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HULE",
+      "question": {
+        "es": "IoC Tipos de Scope",
+        "en": "IoC typo of scopes"
+      },
+      "hint": {
+        "es": "*Depende del lenguage. Ver en la parte del lenguage/Framework*",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HULE",
+      "question": {
+        "es": "IoC Liberias",
+        "en": "IoC Libraries"
+      },
+      "hint": {
+        "es": "*Depende del lenguage. Ver en la parte del lenguage/Framework*",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Singleton",
+        "en": "Singleton"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Dependency Injection",
+        "en": "ependency Injection"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Factory",
+        "en": "Factory"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Observable",
+        "en": "Observable"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Creational patterns",
+        "en": "Creational patterns"
+      },
+      "hint": {
+        "es": "",
+        "en": "These patterns are designed for class instantiation. They can be either class-creation patterns or object-creational patterns"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Structural patterns",
+        "en": "Structural patterns"
+      },
+      "hint": {
+        "es": "",
+        "en": "These patterns are designed with regard to a class' structure and composition. The main goal of most of these patterns is to increase the functionality of the class(es) involved, without changin much of its composition"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    },
+    {
+      "lvl": "X",
+      "company": "HL",
+      "question": {
+        "es": "Behavioral patterns",
+        "en": "Behavioral patterns"
+      },
+      "hint": {
+        "es": "",
+        "en": "These patterns are designed depending on how one class communicates with others"
+      },
+      "area": [
+        "Backend",
+        "Frontend"
+      ]
+    }
+  ],
+  "Javascript": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-----------------------------------------------------------------------------------------------------------",
+        "en": "-------------------------------------------------------------------------------------------------------------"
+      },
+      "hint": {
+        "es": "--------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "2",
+      "company": "HS",
+      "question": {
+        "es": "[Tipos de datos](https://javascript.info/data-types)",
+        "en": "[Data Types](https://javascript.info/data-types)"
+      },
+      "hint": {
+        "es": "Number, String, Boolean, undefined, *bigInit*, *Symbol*, **null**, **object**",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "HS",
+      "question": {
+        "es": "Tipos de Estructura",
+        "en": "Structure Types"
+      },
+      "hint": {
+        "es": "object, Function",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "",
+      "question": {
+        "es": "Ejemplo de Objects",
+        "en": "Object Examples"
+      },
+      "hint": {
+        "es": "Object, [Array](https://javascript.info/array-methods), [Map, Set](https://javascript.info/map-set), WeakMap, WeaSet, Date. Todo lo que va despues de **new**",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "S",
+      "question": {
+        "es": "Flow Control",
+        "en": "Flow Control"
+      },
+      "hint": {
+        "es": "While, Do-While, For, If-else, Switch",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "",
+      "question": {
+        "es": "hasOwnProperty",
+        "en": "hasOwnProperty"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "H",
+      "question": {
+        "es": "typeof",
+        "en": "typeof"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "H",
+      "question": {
+        "es": "Json Array",
+        "en": "Json Array"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "HL",
+      "question": {
+        "es": "Let Var Const",
+        "en": "Let Var Const"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "HL",
+      "question": {
+        "es": "Prototype",
+        "en": "Prototype"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "HL",
+      "question": {
+        "es": "Closure",
+        "en": "Closure"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "H",
+      "question": {
+        "es": "Hoisting",
+        "en": "Hoisting"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "HU",
+      "question": {
+        "es": "Scope",
+        "en": "Scope"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "5",
+      "company": "S",
+      "question": {
+        "es": "Programacion Asíncrona",
+        "en": "Async Programing"
+      },
+      "hint": {
+        "es": "Promises, async/await",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "H",
+      "question": {
+        "es": "Promises and callback",
+        "en": "Promises and Callback"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "H",
+      "question": {
+        "es": "Promise vs Observable",
+        "en": "Promise vs Observable"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "H",
+      "question": {
+        "es": "Multithreading",
+        "en": "Multithreading"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "",
+      "question": {
+        "es": "What is the Fetch method?",
+        "en": "What is the Fetch method?"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "U",
+      "question": {
+        "es": "LocalStorage vs SessionStorage",
+        "en": "LocalStorage vs SessionStorage"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "H",
+      "question": {
+        "es": "window vs document",
+        "en": "window vs document"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Frontend",
+        "Backend"
+      ]
+    }
+  ],
+  "Angular": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------",
+        "en": "-----------------------"
+      },
+      "hint": {
+        "es": "--------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    }
+  ],
+  "ReactJS": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------",
+        "en": "-----------------"
+      },
+      "hint": {
+        "es": "--------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    }
+  ],
+  "TypeScript": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------",
+        "en": "-----------------"
+      },
+      "hint": {
+        "es": "--------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    }
+  ],
+  "Azure": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------------------",
+        "en": "-----------------"
+      },
+      "hint": {
+        "es": "--------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "3",
+      "company": "L",
+      "question": {
+        "es": "PaaS",
+        "en": "PaaS"
+      },
+      "hint": {
+        "es": "Una plataforma compartida para los desarrolladores donde puede espedar su software. Es una capa abstracta de la infrastructura, asi los desarrolladores no necesitan preocuparse por la configuracion del servidor",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "DevOps"
+      ]
+    },
+    {
+      "lvl": "3",
+      "company": "L",
+      "question": {
+        "es": "IaaS",
+        "en": "IaaS"
+      },
+      "hint": {
+        "es": "Una infrastructura de hardware compartida donde el administador puede contruir infrastructuras de servicios, es decir, tiene mas control del sistema que el PaaS",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "DevOps"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "",
+      "question": {
+        "es": "Ejemplos de SaaS",
+        "en": "Examples of SaaS"
+      },
+      "hint": {
+        "es": "Wordpress",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "DevOps"
+      ]
+    },
+    {
+      "lvl": "1",
+      "company": "",
+      "question": {
+        "es": "Ejemplo de PaaS",
+        "en": "Examples of PaaS"
+      },
+      "hint": {
+        "es": "Azure Web Apps",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "DevOps"
+      ]
+    },
+    {
+      "lvl": "2",
+      "company": "",
+      "question": {
+        "es": "Ejemplo de IaaS",
+        "en": "Examples of IaaS"
+      },
+      "hint": {
+        "es": "Azure VMs",
+        "en": ""
+      },
+      "area": [
+        "Backend",
+        "DevOps"
+      ]
+    }
+  ],
+  "UNIT TEST": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "---------------------",
+        "en": "-----------------"
+      },
+      "hint": {
+        "es": "--------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "---------------------",
+        "en": "-----------------"
+      },
+      "hint": {
+        "es": "--------------------------------------------------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "--------",
+        "en": "---------"
+      },
+      "hint": {
+        "es": "------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    }
+  ],
+  "Base de Datos": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "--------",
+        "en": "---------"
+      },
+      "hint": {
+        "es": "------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "--------",
+        "en": "---------"
+      },
+      "hint": {
+        "es": "------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "--------",
+        "en": "---------"
+      },
+      "hint": {
+        "es": "------------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    }
+  ],
+  "Arquitectura": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-------------------",
+        "en": "------------------"
+      },
+      "hint": {
+        "es": "-----------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "",
+      "company": "L",
+      "question": {
+        "es": "Arquitectura Onion",
+        "en": "Onion Architecture"
+      },
+      "hint": {
+        "es": "",
+        "en": ""
+      },
+      "area": [
+        "Backend"
+      ]
+    }
+  ],
+  "Boostrap": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "----------------------",
+        "en": "--------------------"
+      },
+      "hint": {
+        "es": "-----------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "1",
+      "company": "",
+      "question": {
+        "es": "Cuantas columnas son",
+        "en": "How many columns use"
+      },
+      "hint": {
+        "es": "12",
+        "en": ""
+      },
+      "area": [
+        "Frontend"
+      ]
+    }
+  ],
+  "Identity Server": [
+    {
+      "lvl": ":---:",
+      "company": "-----",
+      "question": {
+        "es": "-----------------",
+        "en": "-------------------"
+      },
+      "hint": {
+        "es": "-----------------",
+        "en": "-----------------------------"
+      },
+      "area": []
+    },
+    {
+      "lvl": "1",
+      "company": "",
+      "question": {
+        "es": "Client",
+        "en": "Client"
+      },
+      "hint": {
+        "es": "",
+        "en": "A Client is a piece of software that requests tokens from IdentityServer - either for authenticationg a user or for accessing a resource"
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "",
+      "question": {
+        "es": "API Resource",
+        "en": "API Resource"
+      },
+      "hint": {
+        "es": "",
+        "en": "APIs reousrces represent functionality a client want to invoke - typically modelled as Web APIs."
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "",
+      "company": "",
+      "question": {
+        "es": "Identity Resource",
+        "en": "Identity Resource"
+      },
+      "hint": {
+        "es": "",
+        "en": "Identity information (aka claims) about a user, e.g. name of email address."
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "",
+      "question": {
+        "es": "Identity Token",
+        "en": "Identity Token"
+      },
+      "hint": {
+        "es": "",
+        "en": "An identity token represents the outcome of an authentication process."
+      },
+      "area": [
+        "Backend"
+      ]
+    },
+    {
+      "lvl": "?",
+      "company": "",
+      "question": {
+        "es": "Access Token",
+        "en": "Access Token"
+      },
+      "hint": {
+        "es": "",
+        "en": "An access token allows access to an API Resource."
+      },
+      "area": [
+        "Backend"
+      ]
+    }
+  ]
+}

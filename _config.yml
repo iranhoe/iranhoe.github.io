@@ -1,35 +1,74 @@
 title: Iranhoe
 description: Página de tecnología y blog
-
-baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://iranhoe.com" # change this to the base hostname & protocol for your site
-
-google_analytics:
-
-# cayman-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-cayman-blog:
-  date_format: "%-d %b %Y"
-
-theme: # leave it empty
-
-# social
+url: "https://blog.homeserver.com"
 author: iranhoe
-image: /thumbnail-jumbo.png
+
+timezone: UTC
+lang: es
+
+# Chirpy Theme
+theme: jekyll-theme-chirpy
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-polyglot
+  - jekyll-include-cache
+
+# Polyglot
+languages: [es, en]
+default_lang: es
+exclude_from_localizations: [assets, redirect_from]
+
+# Pagination
+paginate: 10
+paginate_path: '/page:num'
+
+# Archives
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# Social
+social:
+  name: Iran Corrales Becerra
+  email: iran@example.com
+  links:
+    - https://github.com/iranhoe
+    - https://twitter.com/iranhoe
+
+# Chirpy specific settings
 github:
-  owner_name: iran corrales becerra
+  username: iranhoe
 twitter:
   username: iranhoe
 
-plugins:
-  - jekyll-target-blank
+img_path: /assets/img
+avatar: /assets/img/avatar.png
 
-target-blank:
-    rel: nofollow
+tabs:
+  - title: ARCHIVES
+    url: /archives/
+    icon: fas fa-archive
+    order: 1
+  - title: CATEGORIES
+    url: /categories/
+    icon: fas fa-folder-open
+    order: 2
+  - title: TAGS
+    url: /tags/
+    icon: fas fa-tags
+    order: 3
+  - title: ABOUT
+    url: /about/
+    icon: fas fa-info-circle
+    order: 4
 
-header_page_refs: ['now', 'devblog', 'gameblog', 'about']
-
-disqus:
-  # Leave shortname blank to disable comments site-wide.
-  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  shortname: iranhoe-github-io

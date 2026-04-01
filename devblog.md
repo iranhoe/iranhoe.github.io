@@ -1,5 +1,5 @@
 ---
-layout: devblog
+layout: page
 tagline: Artículos de tecnología
 title: Dev Blog
 permalink: /devblog.html

@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Quien soy
-tagline: Desarrollador por gusto y lector empedernido
-permalink: /about.html
-ref: about
-order: 0
+permalink: /about/
+icon: fas fa-info-circle
+order: 4
 ---
 
 Desde una temprana edad averigüe que lo que a mi me gustaba era el trabajar con código. Mis primeros pasos fueron a los 13 años con el lenguaje visual basic que tenia integrado Microsoft Excel. después conocí a Basic con su pantalla rojo.
@@ -17,4 +16,4 @@ Actualmente desarrollo utilizando el lenguaje de Programación C# de manera prof
 
 Espero algún momento hacer un video juego, la verdadera razon por la que soy programador, y poder dar clases de programación.
 
-[Regresar a la Pagina de Inicio]({{ '/' | absolute_url }})
+[Regresar a la Pagina de Inicio]({{ site.baseurl }}/)

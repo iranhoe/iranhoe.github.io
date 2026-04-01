@@ -1,5 +1,5 @@
 ---
-layout: gameblog
+layout: page
 title: Game Blog
 tagline: Artículos de video juegos
 permalink: /gameblog.html
